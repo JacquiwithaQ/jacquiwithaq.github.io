@@ -2,11 +2,14 @@
     background: url(stars.jpg);
     position: absolute;
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: cover;
     top:0;
     left:0;
     margin: auto;
     background-attachment: fixed;
+}
+.buffer{
+  border-spacing: 15px;
 }
 .layer {
     background-color: rgba(6, 15, 30, 0.9);
@@ -35,6 +38,7 @@ a:visited{
 h1{
   font-family: Verdana, sans-serif;
   font-size:36px;
+  color: white;
 }
 h2{
   font-size:30px;
