@@ -1,0 +1,118 @@
+body {
+    background-image: linear-gradient(#0077E0, #ffffff);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #0077E0;
+    font-family: Arial, Sans-serif;
+}
+
+#mainCanvas {
+    margin: 10px;
+    display: block;
+    z-index: 5;
+    position: relative;
+}
+
+.tool-button-table{
+	display: table;
+	margin: 10px;
+	border: 5px solid white;
+}
+
+.tool-button-row{
+    display: table-row;
+    width: 640px;
+}
+
+.tool-button-cell{
+	display: table-cell;
+}
+
+.tool-button {
+	height: 30px;
+	width: 30px;
+	border: 5px solid white;
+	cursor: pointer;
+}
+
+.tool-button:hover {
+	border: 5px solid transparent;
+}
+
+.selected-tool-button {
+	border: 5px solid transparent;
+}
+
+#yellow-button {
+	background-color: #FDDE44;
+}
+
+#pink-button {
+	background-color: #E23571;
+}
+
+#green-button {
+	background-color: #33722E;
+}
+
+#brown-button {
+	background-color: #664F23;
+}
+
+#grey-button {
+	background-color: #D9D9D9;
+}
+
+#blue-button {
+	background-color: #287490;
+}
+
+#teal-button {
+	background-color: #44D6BF;
+}
+
+#orange-button {
+	background-color: #FF7300;
+}
+
+#purple-button {
+	background-color: #7030A0;
+}
+
+.level-button-table{
+	display: table;
+	margin: 10px;
+	border: 5px solid white;
+}
+
+.level-button-row{
+    display: table-row;
+}
+
+.level-button-cell{
+	display: table-cell;
+}
+
+.level-button {
+	border: 5px solid white;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.level-button:hover {
+	border: 5px solid transparent;
+	padding: 5px;
+}
+
+#level-background {
+    width: 640px;
+    height: 480px;
+    margin: 10px;
+    margin-top: 0px;
+    background-size:100% 100%;
+    display: block;
+    z-index: 3;
+    position: absolute;
+}

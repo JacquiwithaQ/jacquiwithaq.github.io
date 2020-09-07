@@ -1,0 +1,66 @@
+#content {
+  width: 80%;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0px 20px 0px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  display: block;
+  overflow: auto;
+}
+
+.description {
+  font-size: 14pt;
+}
+
+.section_header {
+  font-family: "young";
+  color: var(--dark-color);
+  font-size: 32pt;
+  font-weight: bolder;
+}
+
+.date {
+  font-size: 16pt;
+  float: right;
+}
+
+.bullet_point {
+  font-size: 20pt;
+  font-weight: bolder;
+}
+
+.subtitle {
+  font-size: 16pt;
+  font-weight: bolder;
+}
+
+#coursework {
+  display: table;
+}
+
+.coursework_row{
+  display: table-row;
+}
+
+.course {
+  display: table-cell;
+  padding-right: 18px;
+  font-size: 12pt;
+  font-weight: normal;
+}
+
+.description .italic {
+  font-style: italic;
+  font-weight: 300px;
+}
+
+.description .bold {
+  font-weight: 500;
+}
+
+.description .very_bold {
+  font-weight: 700;
+}

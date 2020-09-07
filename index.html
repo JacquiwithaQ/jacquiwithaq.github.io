@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Jacqui's Profile</title>
-		<link rel="stylesheet" type="text/css" href="jacquistyle.css" >
-	</head>
-	<body>
-		<div class="background">
-    <div class="layer">
-			<br><br>
-		<h1>
-			<center>Jacqueline Fashimpaur</center>
-		</h1>
-
-		<div1>
-			<center><img src="laugh.jpg" width="240" alt="Photo of Jacqui"></center>
-		</div1>
-
-		<div class ="text">
-			<h2><strong>About</strong></h2>
-				<p>Jacqui is an ambitious individual with a passion for film making and computer science She is currently attening CSSI.</p>
-			<h3>Hometown</h3>
-				<p>Jacqui is from Cedar Rapids, Iowa.</p>
-			<h3>University</h3>
-				<p>She will be majoring in Computer Science at Carnegie Mellon University.</p>
-			<h3>Favorites</h3>
-				<ol>Entertainment
-						<ul>
-							<li>Inception (Movie)</li>
-							<li>Some Nights by Fun (Song)</li>
-							<li>Friends (Show)</li>
-							<li>Hamilton (Musical)</li>
-						</ul>
-				</ol>
-				<ol>Food
-						<ul>
-							<li>Sushi</li>
-							<li>Ice Cream</li>
-							<li>Tacos</li>
-						</ul>
-				</ol>
-				<ol>Places
-						<ul>
-							<li>Cedar Rapids</li>
-							<li>Berlin</li>
-							<li>Pittsburgh</li>
-							<li>Any place with a lot of Pokestops...</li>
-						</ul>
-				</ol>
-				<h3>The Important Stuff</h3>
-							<ul>
-								<li>Hogwarts House: Slytherin</li>
-								<li>Pokemon Team: Team Valor</li>
-								<li>Marvel or DC: Marvel</li>
-								<li>Star Wars or Star Trek: Star Wars</li>
-							</ul>
-				<h3>Short Films</h3>
-					<p>Jacqui has been making short films since she was in middle school. Here are some of her favorites.</p>
-					<center>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/xIOTVhuhmFY" frameborder="0" allowfullscreen></iframe>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/gccdiHq5ueU" frameborder="0" allowfullscreen></iframe>
-					</center>
-				<h3>Other Pictures</h3>
-				<center>
-					<img src="chris.jpg" height="350" alt="Jacqui in a Play">
-					<img src="jessie.jpg" height="350" alt="Jacqui is Cosplay">
-					<img src="grad.JPG" height="350" alt="Jacqui at Graduation">
-				</center>
-			</div>
-			</div>
-		</div>
-	</body>
+<head>
+  <title>Jacqui Fashimpaur</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="index_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon"
+      type="image/png"
+      href="data/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script> 
+  $(function(){
+    $("#navbar").load("header.html", function() {$("#about_tab").addClass( "selected" );}); 
+    $("#footer").load("footer.html"); 
+  });
+  </script>
+</head>
+<body>
+  <div id="navbar"></div>
+  <div id="content">
+    <img id="homepage_photo" src="data/cozy.jpg">
+    <br><br><br>
+    <span class="big"> I'm <span class="bold">Jacqui Fashimpaur</span>, </span>
+    <br>
+    <span class="medium">software developer and computational artist.</span>
+    <br><br>
+    <span class="small">
+      I'm a senior at <a href="https://www.cmu.edu/" class="text_link" target="blank">Carnegie Mellon University</a>, pursuing a Bachelor of Science in Computer Science with a minor in Film and Media Studies.
+      <br><br>
+      I'm passionate about understanding and improving the ways people interact with technology, both for utility and entertainment. I make art projects exploring the places where the physical and digital worlds meet.
+      <br><br>
+      I serve as co-president of <a href="https://puzzlehunt.club.cc.cmu.edu/" class="text_link" target="blank">Puzzlehunt CMU</a> and presdient of CMU's Film Club. I also am a head teaching assistant for the course <a href="http://www.cs.cmu.edu/~15251/" class="text_link" target="blank">Great Ideas in Theoretical Computer Science</a>. In my free time, I like to learn about a variety of subjects, including mathematics, film theory, and psychology. I also enjoy playing board games, painting with watercolors, watching movies, and making digital games and art projects.
+      <div class="heading">Get in touch!</div>
+      <div id="big_icons">
+      <a href="https://www.linkedin.com/in/jacquifashimpaur/" target="_blank">
+        <img class="big_icon" src="data/linkedin_icon.png">
+      </a>
+      <a href="https://www.youtube.com/channel/UCEIic93LWRi34usCf9EiamQ" target="_blank">
+        <img class="big_icon" src="data/youtube_icon.png">
+      </a>
+      <a href="mailto:jfashimpaur@gmail.com">
+        <img class="big_icon" src="data/mailto_icon.png">
+      </a>
+      </div>
+      <div class="heading">Selected Projects and Diversions</div>
+      <div class="grid_button" id="pinchtype_button" onclick='window.location = "projects.html?project=pinchtype";'>
+      <div class="grid_label">
+        <span class="title">PinchType</span><br>
+        <span class="subtitle">VR Text Entry Research</span>
+      </div>
+      <img class="thumb" src="data/project_thumbnails/pinchtype_thumb.png">
+    </div>
+    <div class="grid_button" id="stroke_button" onclick='window.location = "projects.html?project=strokesketch";'>
+      <div class="grid_label">
+        <span class="title">Stroke of Genius/<br>Sketch Garden</span><br>
+        <span class="subtitle">Drawing Game + Gallery</span>
+      </div>
+      <img class="thumb" src="data/project_thumbnails/stroke_thumb.png">
+    </div>
+    <div class="grid_button" id="rebus_button" onclick='window.location = "projects.html?project=rebuschat";'>
+      <div class="grid_label">
+        <span class="title">Rebus Chat</span><br>
+        <span class="subtitle">Messaging App</span>
+      </div>
+      <img class="thumb" src="data/project_thumbnails/rebus_thumb.png">
+    </div>
+    <div class="grid_button" id="astraea_button" onclick='window.location = "projects.html?project=astraea";'>
+      <div class="grid_label">
+        <span class="title">Astraea</span><br>
+        <span class="subtitle">Mobile VR App</span>
+      </div>
+      <img class="thumb" src="data/project_thumbnails/astraea_thumb.png">
+    </div>
+    <div class="grid_button" id="vrhome_button" onclick='window.location = "projects.html?project=vrhome";'>
+      <div class="grid_label">
+        <span class="title">VR Home</span><br>
+        <span class="subtitle">Virtual Spaces Research</span>
+      </div>
+      <img class="thumb" src="data/project_thumbnails/vrhome_thumb.png">
+    </div>
+    <div class="grid_button" id="pickmeup_button" onclick='window.location = "projects.html?project=pickmeup";'>
+      <div class="grid_label">
+        <span class="title">Pick Me Up</span><br>
+        <span class="subtitle">Animated Short</span>
+      </div>
+      <img class="thumb" src="data/project_thumbnails/pickmeup_thumb.png">
+    </div>
+    <div class="grid_button" id="genesong_button" onclick='window.location = "projects.html?project=genesong";'>
+      <div class="grid_label">
+        <span class="title">Genesong</span><br>
+        <span class="subtitle">Generative Songbook</span>
+      </div>
+      <img class="thumb" src="data/project_thumbnails/genesong_thumb.png">
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
 </html>

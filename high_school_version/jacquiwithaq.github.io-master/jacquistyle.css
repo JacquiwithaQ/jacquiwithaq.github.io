@@ -1,0 +1,48 @@
+.background {
+    background: url(stars.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:0;
+    left:0;
+    margin: auto;
+    background-attachment: fixed;
+}
+.buffer{
+  border-spacing: 15px;
+}
+.layer {
+    background-color: rgba(6, 15, 30, 0.9);
+    background-repeat: repeat-y;
+    position: center;
+    top: 0;
+    margin: auto;
+    height: 100%;
+        width: 85%;
+    margin: 100px, 80px, 0px;
+}
+.text{
+  color: white;
+  font-family: "Verdana", sans-serif;
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+}
+a:link{
+  color: white;
+}
+a:visited{
+  color:gray;
+}
+h1{
+  font-family: Verdana, sans-serif;
+  font-size:36px;
+  color: white;
+}
+h2{
+  font-size:30px;
+}
+h3{
+  font-size:28px;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jacqui Fashimpaur</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="projects_style.css">
+  <link rel="stylesheet" type="text/css" href="external/lightbox.css">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon"
+      type="image/png"
+      href="data/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script> 
+  $(function(){
+    $("#navbar").load("header.html", function() {$("#diversions_tab").addClass( "selected" );});
+    $("#footer").load("footer.html"); 
+  });
+  </script>
+</head>
+<body>
+  <div id="navbar"></div>
+  <div id="content">
+    <br><br><br><span class="description">Here are some of my favorite projects that I've worked on, in a variety of areas. To see the code for some of these, you can visit my <a href="https://github.com/JacquiwithaQ" target="_blank" class="text_link">GitHub</a>, and to read more about my work experience, you can check out my <a href="resume.html" class="text_link">resume</a>.
+    <br><br>
+    Click on an image to get a better look and read more about it.</span>
+    <br><br><br>
+    <!--Project 11 -->
+    <span class="title">Rebus Chat</span>
+    <iframe class="video" src="https://www.youtube.com/embed/CR5t0cBC7Uk" frameborder="0" allow="encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">Messaging App</span><br>
+    <span class="subtitle">2019</span><br><br>
+    <span class="description">I've always loved puzzles. So when my <a href="http://golancourses.net/2019/" class="text_link" target="_blank">Interactive Art</a> class assigned a project about communication, I thought about how puzzles communicate a message in an obfuscated way. I considered making a messaging app for an encoding scheme like binary or morse code, but ultimately landed on rebus because it's more accessible and fun for people who aren't experienced with puzzles.<br><br>I created an Android messaging app called <span class="bold">Rebus Chat</span> using <a href="https://developer.android.com/studio" class="text_link" target="_blank">Android Studio</a> and <a href="https://firebase.google.com/" class="text_link" target="_blank">Firebase</a>. The critical part of the project is the rebus-ification algorithm, which is explained in more detail in <a href="http://golancourses.net/2019/jaqaur/05/09/jaqaur-finalproject/" class="text_link" target="_blank">this blog post</a>, but basically it does the following: convert the message into a series of phonemes using the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict" class="text_link" target="_blank">CMU Pronouncing Dictionary</a>, check the bank of around 150 named icons, and use dynamic programming to find the sequence of icons and letters that best matches the phonemes of the message. I hand selected the icons in this app from <a href="https://thenounproject.com/" class="text_link" target="_blank">The Noun Project</a>, trying to cover most common short words and word parts. I was impressed with how effectively the app was able to generate rebuses, and I am often surprised and delighted by the way it represents my messages. Even people who aren't familiar with rebuses can usually solve and appreciate the app's "puns." I plan to add to the icon bank, polish the interface, and release <span class="bold">Rebus Chat</span> as a Messenger extension.</span>
+    <br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/rebus_chat1.png" data-lightbox="rebus_chat" data-title='An example of a rebus-ified message. "I am typing something for this demo" became "Eye M tie pin sum thin four th+S day mow."'>
+          <img class="small_image rebus_chat" src="data/projects/rebus_chat1_small.png"></a>
+          <a href="data/projects/rebus_chat2.png" data-lightbox="rebus_chat" data-title='An example of rebus-ified messages. The first person said "On top of the world" and the other replied "but underneath the ocean." Since the app ignores breaks between words, "but undern..." because "button + d + urn..." in the final puzzle. I think this makes it more fun! The algorithm also allows for imperfect matches, as demonstrated by "world" turning into "well + d."'>
+          <img class="small_image rebus_chat" src="data/projects/rebus_chat2_small.png"></a>
+          <a href="data/projects/rebus_chat3.png" data-lightbox="rebus_chat" data-title="A screenshot of some Rebus Chat message history. My friend and I are discussing our movie night plans and what snacks we will get. Can you understand all of the messages?">
+          <img class="small_image rebus_chat" src="data/projects/rebus_chat3_small.png">
+          </a>
+          <a href="data/projects/rebus_chat4.jpg" data-lightbox="rebus_chat" data-title="Rebus Chat as it was displayed in my Interactive Art class's final exhibition. Two phones with the app were provided, and participants were encouraged to send each other messages.">
+          <img class="small_image rebus_chat" src="data/projects/rebus_chat4_small.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 10 -->
+    <span class="title">Astraea</span>
+    <iframe class="video" src="https://www.youtube.com/embed/JWn9_pbGemU" frameborder="0" allow="encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">Mobile VR App</span><br>
+    <span class="subtitle">2019</span><br><br>
+    <span class="description"><span class="bold">Astraea</span> was originally made for the class <a href="http://golancourses.net/2019/" class="text_link" target="_blank">Interactive Art</a>. The assignment was to make a tool for drawing, and I wanted to make something that would constrain what the artist was able to draw, but do so in a way that was meaningful rather than frustrating. I eventually landed on the idea of giving the user a set of points, and only allowing them to draw by connecting those points. In particular, I give people the stars (populated from <a href="http://www.astronexus.com/hyg" class="text_link" target="_blank">The HYG Database</a>) and let them draw their own constellations. I like this concept because, in Greek mythology, the gods would only put people and items in the stars as the highest honor. Now, people get to decide for themselves what is most significant and what stories they want the stars to tell.<br><br>The final product is named <span class="bold">Astraea</span> after the daughter of the Greek gods of dusk and dawn, who is depicted in Virgo. It is a mobile virtual reality application where the user sits in an open clearing, using a green stargazing laser to interact with the stars above them. When you hover over a star, it swells and displays its name. When you click on two stars in a row, a line is drawn connecting them. You can also rotate the night sky to any position you want. In this way, <span class="bold">Astraea</span> is not just a tool for drawing pictures but for learning about the night sky in an interactive way. Hopefully it will help people identify real stars and find their personal constellations the next time they are stargazing.</span>
+    <br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/astraea1.jpg" data-lightbox="astraea" data-title="An example of Astraea's interface. The user is hovering over the star Sirius, so its name is displayed below it (oriented relative to the headset's position). It took a while to get the right look for the stars; they are sized relative to their brightness from Earth, but enlarged a bit so they are easier to click on. All the stars with magnitude greater than 6 (ie. quite dim) have been filtered out. I watched real stars twinkling to get the ``twinkle'' effect right, which was ultimately done by rapidly and randomly resizing the glowing ring around the central point.">
+          <img class="small_image astraea" src="data/projects/astraea1_small.jpg"></a>
+          <a href="data/projects/astraea2.jpg" data-lightbox="astraea" data-title="An example of me using Astraea on my Daydream. I think the fact that it's in VR helps make the whole drawing experience more wondrous and peaceful. It was also important to me that this was for mobile VR rather than a bulky headset like the Vive. I want people to be able to lie down in bed and draw their constellations like they're telling bedtime stories. You can't do that with a lot of the higher-end headsets.">
+          <img class="small_image astraea" src="data/projects/astraea2_small.jpg">
+          </a>
+          <a href="data/projects/astraea3.jpg" data-lightbox="astraea" data-title="A constellation I drew in Astraea (it's my cat). I find that the stars are very effective at constraining what one can draw--not any picture can go anywhere; you have to think carefully--while still allowing a lot of room for imagination.">
+          <img class="small_image astraea" src="data/projects/astraea3_small.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 9 -->
+    <span class="title">VR Home</span>
+    <iframe class="video" src="https://www.youtube.com/embed/7GBGT_5uBZM?rel=0" frameborder="0" allow="encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">Virtual Reality Research Project</span><br>
+    <span class="subtitle">2018-2019</span><br><br>
+    <span class="description">This is a research project that explores the potential for a hybrid virtual-physical home that uses virtual reality to meet people's home-related needs. These include things like personalization, privacy, and comfort, which may be missing from certain kinds of residences. Over the summer, our team of eight students designed and built four prototype VR rooms for the HTC Vive using Unity 3D and Maya.<br><br> Each room was inspired by a few key aspects of ``home'' that we found in the literature and our own interviews. The Meditation Room was designed to be comfortable and facilitate the development of rituals. It overlooks an infinite ocean and includes a diagetic UI that lets users control the volume of sounds and the time of day. The Collection Room was more fantastic, featuring a large wall with cell-like compartments where users could arrange their photos, videos, and scanned 3D objects. We were trying to create a space devoted to personalization and curation, but the room's complicated design turned out quite messy, and we decided to drop it and move on rather than spend time fixing it. The Greenhouse was our exploration of change over time and caretaking responsibilities. Using Leap Motion rather than traditional controllers, users can plant, tend to, and harvest vegetables and flowers over repeated visits. They also can exchange gifts with their ``neighbors,'' who we fabricated for our prototype. The final room, the Hearth, includes two cozy armchairs in front of a fireplace. We aligned physical furniture with the virtual furniture so that users could trust their eyes and interact physically with their environment. We were interested in physical-virtual continuity and whether or not it increases comfort. <br><br> At the end of the summer, I presented a poster for this project in an REU poster session, which you can <a href="data/vrhome_poster.pdf" class="text_link" target="_blank">view here</a>. We also playtested our virtual rooms as part of a user study, and are currently writing a research paper about our results. This research was done through CMU's Human-Computer Interaction Institute and Entertainment Technology Center.</span>
+    <br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/vrhome1.jpg" data-lightbox="vrhome" data-title="The first virtual room we created: the meditation room. Our goal was to make a space users could feel comfortable in. The rocks in the board can be used to control the volume of different sounds, and to adjust the time of day. I was the developer in charge of the time-of-day controls, and of lighting the scene in general. I added a candle to serve as a focal point for meditators, and to light the scene when it was dark.">
+          <img class="small_image vrhome" src="data/projects/vrhome1_small.jpg"></a>
+          <a href="data/projects/vrhome2.jpg" data-lightbox="vrhome" data-title="In the Greenhouse, users can bury, weed, water, and otherwise tend to plants that grow slowly over many visits. They can exchange gifts with virtual neighbors, and harvest vegetables and flowers. We use Leap Motion to track their hands, so all of these interactions can be done without controllers. I was in charge of interactions with the dirt, which included digging holes, filling holes, and watering. I also created the environment outside the greenhouse and designed the scene's lighting.">
+          <img class="small_image vrhome" src="data/projects/vrhome2_small.jpg">
+          </a>
+          <a href="data/projects/vrhome3.jpg" data-lightbox="vrhome" data-title='A side by side comparison of the Hearth, as seen in "real life" (left) and from within the headset (right). The Hearth is designed to look like a cozy living room during a snowstorm, with a fire burning in the fireplace. The virtual furniture lined up with physical furniture so that users could actually touch and sit on it. We were trying to create a virtual environment where people could trust their senses. As part of this, we added a space heater and scented candle to the room during playtests.'>
+          <img class="small_image vrhome" src="data/projects/vrhome3_small.jpg">
+          </a>
+          <a href="data/projects/vrhome4.jpg" data-lightbox="vrhome" data-title="Me discussing my research with a guest at the REU end-of-summer poster session. People had a lot of questions about virtual reality, and it was great to see them so engaged.">
+          <img class="small_image vrhome" src="data/projects/vrhome4_small.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 8 -->
+    <span class="title">Pick Me Up</span>
+    <iframe class="video" src="https://player.vimeo.com/video/270387413?byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">Animated Short</span><br>
+    <span class="subtitle">2018</span><br><br>
+    <span class="description"><span class="bold">Pick Me Up</span> is a three-minute animated short that was my final project for the class ``Animation Art and Technology.'' It was made over nine weeks on a team with four other animators. We used Maya for all of the animation, and Premiere to edit the final video. Many things were done using simulations, like the squirrel's squishy body, the turtle's tears, the broken vase, the flower petals, the newspaper, and the snow. To learn more about the production of <span class="bold">Pick Me Up</span>, you can <a href="https://vimeo.com/269727049" class="text_link" target="_blank">watch our ``Making Of'' video</a>.<br><br> I was one of the two body animators on the project, so I did all of the keyframed animation (excluding facial expressions) for about half of the film. I also was in charge of researching and developing the technique we would later use to simulate footprints in the snow. We did this by making the surface of the snow a soft body, making other objects colliders for it, and changing some settings so the prints would last and look natural. <a href="https://vimeo.com/262870514" class="text_link" target="_blank">Here</a> is a video documenting my experimentation with this. The whole team put a lot of work into the details of this project, and I think it really paid off in the final film.</span>
+    <br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/pickmeup1.png" data-lightbox="pickmeup" data-title="A still from the opening scene of Pick Me Up. Almost every shot included some type of simulation, like snow, paper, or flower petals. The squirrel himself was even made a soft body so he would look more natural."><img class="small_image pickmeup" src="data/projects/pickmeup1_small.png"></a>
+          <a href="data/projects/pickmeup2.png" data-lightbox="pickmeup" data-title="A still from the final scene of Pick Me Up. The fog and most of the lighting was in the scene itself, but the glow from the house's interior was added in post.">
+          <img class="small_image pickmeup" src="data/projects/pickmeup2_small.png">
+          </a>
+          <a href="data/projects/pickmeup3.png" data-lightbox="pickmeup" data-title="The model and rig for the squirrel character. His arm joints are on a ribbon, so they can stretch and twist. The whole rig was designed to be very stretchy for exaggerated motion.">
+          <img class="small_image pickmeup" src="data/projects/pickmeup3_small.png">
+          </a>
+          <a href="data/projects/pickmeup4.png" data-lightbox="pickmeup" data-title="Indentations in the snow were created by making the snow's surface a soft body and making other objects colliders for it. But we needed to prevent the squirrel's toes from lifting and dragging the snow around, so we put invisible rounded shoes on him that collided with the snow instead.">
+          <img class="small_image pickmeup" src="data/projects/pickmeup4_small.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 7 -->
+    <span class="title">Evolving Methods of Perception</span>
+    <iframe class="video" src="https://www.youtube.com/embed/5qVJmIvWJLc?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">VR Installation</span><br>
+    <span class="subtitle">2018</span><br><br>
+    <span class="description">This was a group project for the class <a href="https://sites.google.com/site/artml2018/" class="text_link" target="_blank">Art and Machine Learning</a>. My groupmates and I were very interested in generating 3D content, and since one of us already had a large dataset of point clouds, we decided to work with that. We trained an autoencoder on a dataset of point clouds, half of which were my groupmate's (these were shaped like women in different poses), and half of which we got from <a href="https://www.shapenet.org/" class="text_link" target="_blank">ShapeNet</a> (these were shaped like computers and monitors). Once the autoencoder had formed a latent space for these shapes, we wanted to let people explore it in virtual reality. The final result was a virtual reality experience where the user can fly around over an infinite digital terrain. Point clouds shaped like women or computers are randomly spawned, and as the user approaches them, they morph through the latent space into a different shape. <br><br> Our initial concept for this experience was that we were imagining what an AI might dream of as it became self-aware, blurring the line between human and machine. However, many visitors who tried it had their own interpretations: some saw it as a commentary on the objectification of women online, and one person called it ``a confused robot's sexual fantasy.'' It was great to see people interacting with and thinking about our project.</span>
+    <br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/pointclouds1.jpg" data-lightbox="pointclouds" data-title="A picture from a test run of the experience (on a computer, hence the cursor). The hot pink mountains convey a definite sense of femininity, while the cyan points look distinctly digital.">
+          <img class="small_image pointclouds" src="data/projects/pointclouds1.jpg">
+          </a>
+          <a href="data/projects/pointclouds2.jpg" data-lightbox="pointclouds" data-title="An example interpolation through the latent space from computer monitor to human (she is doing a backbend in this point cloud). Many interpolations like this were pre-computed and loaded into the experience, so as not to use too much computational power while the VR was running.">
+          <img class="small_image pointclouds" src="data/projects/pointclouds2.jpg">
+          </a>
+          <a href="data/projects/pointclouds3.jpg" data-lightbox="pointclouds" data-title="The installation of our project at the class' final showcase. We put the experience on a Google Cardboard, on a pedestal in front of a video of an example run.">
+          <img class="small_image pointclouds" src="data/projects/pointclouds3_small.jpg">
+          </a>
+          <a href="data/projects/pointclouds4.jpg" data-lightbox="pointclouds" data-title="A guest at the showcase trying out 'Evolving Methods of Perception.'">
+          <img class="small_image pointclouds" src="data/projects/pointclouds4_small.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 6 -->
+    <span class="title">Infinite Descent: A Theoretically Great Idea</span>
+    <a href="data/projects/infinite_descent_primary.jpg" data-lightbox="infinite_descent" data-title='Infinite Descent as it was displayed at the final showcase. I enjoyed watching the many responses, especially from students who were familiar with the course.'>
+    <img class="big_image" src="data/projects/infinite_descent_primary.jpg">
+    </a>
+    <br>
+    <span class="subtitle">LSTM-Generated Proofs</span><br>
+    <span class="subtitle">2018</span><br><br>
+    <span class="description">I made <span class="bold">Infinite Descent</span> for a text-generation assignment in the class <a href="https://sites.google.com/site/artml2018/" class="text_link" target="_blank">Art and Machine Learning</a>. It was inspired by my experience as a teaching assistant for the course 15-251, <a href="http://www.cs.cmu.edu/~15251/" class="text_link" target="_blank">Great Ideas in Theoretical Computer Science</a>. Students in the course are fairly new to writing proofs and their assignments are often very difficult to interpret. I decided that this would be an ideal context for ML-generated sentences, because text produced by a neural network always looks good without actually making any sense, much like a bad student submission. <br><br>I trained an <a href="https://github.com/bapoczos/ArtML/tree/master/text-generation-LSTM" class="text_link" target="_blank">LSTM</a> network on all of the 15-251 course content I could find, including course notes, homework assignments, and practice problems. Then I had it generate a large amount of text. Half of these I transcribed by hand to resemble the proofs that students submit for homework and TAs must grade. The other half I formatted to resemble the course notes, which students study to learn the material. In both situations, the reader is highly motivated to understand what is written. I invite viewers of the piece to step into one of these roles, and experience the frustration of not being able to fully comprehend the text in front of them. <span class="bold">Infinite Descent</span> was selected to be in the ``Art and Machine Learning'' final showcase, where students, TAs, and professors alike enjoyed trying to read the proofs and make sense of them. You can view the generated pages for youself below.</span>
+<!--I have enjoyed watching the responses to <span class="bold">Infinite Descent</span>. Initially, I sent the "student proofs" without context to a number of my fellow TAs, and many of them offered grading suggestions or expressed sympathy that I had to grade such a confusing paper.-->
+    <br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/infinite_descent1.jpg" data-lightbox="infinite_descent" data-title='A generated page of "student proofs." I transcribed the text as quickly as possible so it would resemble the bad handwriting we sometimes get on assignments. Whenever I made an error, I crossed it out and continued, so the page would look messier and less organized.'><img class="small_image infinite_descent" src="data/projects/infinite_descent1_small.jpg"></a>
+          <a href="data/projects/infinite_descent2.jpg" data-lightbox="infinite_descent" data-title='A generated page of "student proofs." I transcribed the text as quickly as possible so it would resemble the bad handwriting we sometimes get on assignments. Whenever I made an error, I crossed it out and continued, so the page would look messier and less organized.'>
+          <img class="small_image infinite_descent" src="data/projects/infinite_descent2_small.jpg">
+          </a>
+          <a href="data/projects/infinite_descent3.jpg" data-lightbox="infinite_descent" data-title='A generated page of "student proofs." I transcribed the text as quickly as possible so it would resemble the bad handwriting we sometimes get on assignments. Whenever I made an error, I crossed it out and continued, so the page would look messier and less organized.'>
+          <img class="small_image infinite_descent" src="data/projects/infinite_descent3_small.jpg">
+          </a>
+          <a href="data/projects/infinite_descent4.jpg" data-lightbox="infinite_descent" data-title='A generated page of "course notes." Any generated paragraph beginning with "Definition" or "Exercise" went into this category, as did the one chapter heading that the network generated. At first glance, it is almost indistinguishable from the real thing.'>
+          <img class="small_image infinite_descent" src="data/projects/infinite_descent4_small.jpg">
+          </a>
+          <a href="data/projects/infinite_descent5.jpg" data-lightbox="infinite_descent" data-title='A generated page of "course notes." Any generated paragraph beginning with "Definition" or "Exercise" went into this category. Near the bottom, you can see it indicate that something is a GROUP problem. This is the network imitating a homework assignment.'>
+          <img class="small_image infinite_descent" src="data/projects/infinite_descent5_small.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 5 -->
+    <span class="title">DeepStock</span>
+    <iframe class="video" src="https://www.youtube.com/embed/Q4mplQBRrfM?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">GAN-Generated Stock Photos</span><br>
+    <span class="subtitle">2018</span><br><br>
+    <span class="description"><span class="bold">DeepStock</span>, also called ``Deep Pix2Stock Salad,'' was made as part of a group project for the course <a href="https://sites.google.com/site/artml2018/" class="text_link" target="_blank">Art and Machine Learning</a>. When we were first searching for a dataset, we struggled to find meaningful images that were not protected by copyright. This inspired us to use stock photos, famously royalty-free images which are available only because of the garish watermarks across them. In particular, we collected a dataset of 2134 images of salads from <a href="https://www.shutterstock.com/search?search_source=base_landing_page&language=en&searchterm=salad&image_type=all" class="text_link" target="_blank">Shutterstock</a>, since photos of salad are canonically generic. <br><br> My role in this project was to generate new stock photos, which I decided to do with my professor's <a href="https://github.com/bapoczos/ArtML/tree/master/DCGAN_Pytorch" class="text_link" target="_blank"> Pytorch representation of DCGAN</a>. I trained it on our dataset for 100 epochs (in initial trials, the model would start overfitting after about 105 epochs), and you can see a timelapse of its progress above. The images generated by this model looked good from a distance, but had very low resolution, so I decided to use <a href="https://phillipi.github.io/pix2pix/" class="text_link" target="_blank">Pix2Pix</a> to sharpen them and add texture. I trained a Pix2Pix model for 20 epochs where the A images were low-res versions of the pictures in our dataset, and their corresponding B images were the high-res versions. This model was surprisingly effective at improving image quality, and once the GAN-generated stock photos were passed through it, they had much more clearly defined bowls, leaves, and watermarks. Some examples of these final results are below.
+    <br><br> I love the concept for this project, partially because the idea of generating more stock photos than there already are is so ridiculous, but also because it brings up interesting questions regarding creativity and ownership. Shutterstock owns all the images in my dataset, but who owns the images that the network has generated? Shutterstock? Me? The network? <span class="bold">DeepStock</span> encourages people to consider these important issues, but does so in a light-hearted and whimsical manner.<br><br></span>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/deep_stock1.jpg" data-lightbox="deepstock" data-title="A stock photo of a salad generated by DeepStock. I love the translucent bowl that still shows some of its contents. The gray bar at the bottom was a common feature across everything in the dataset."><img class="small_image deepstock" src="data/projects/deep_stock1_small.png"></a>
+          <a href="data/projects/deep_stock2.jpg" data-lightbox="deepstock" data-title="A stock photo of a salad generated by DeepStock. Though it isn't legible, there is still a very clear watermark across the image, and I love how the network learned to add that. Who is it trying to claim copyright for?">
+          <img class="small_image deepstock" src="data/projects/deep_stock2_small.png">
+          </a>
+          <a href="data/projects/deep_stock3.png" data-lightbox="deepstock" data-title="Late training results from the Pix2Pix texturizer. The top row is the input images (low res), the second row is the ground truth (high res), and the third row is the pictures generated by the network; I think it did a great job adding detail to the images, and creating an impression of higher resolution (though the salads are still distorted).">
+          <img class="small_image deepstock" src="data/projects/deep_stock3_small.png">
+          </a>
+          <a href="data/projects/deep_stock4.png" data-lightbox="deepstock" data-title="A demonstration of the effectiveness of the Pix2Pix texturizer: on the left is an image that was generated by the DCGAN network, and on the right is that same image after it was transformed by the Pix2Pix network. Shapes like lettuce leaves and shrimp bodies have sharpened, as have the hideous watermarks.">
+          <img class="small_image deepstock" src="data/projects/deep_stock4_small.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 4 -->
+    <span class="title">Tracing Movement</span>
+    <iframe class="video" src="https://www.youtube.com/embed/zw7HS-e2mCk?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">Data-Driven Watercolor Paintings</span><br>
+    <span class="subtitle">2016</span><br><br>
+    <span class="description">For this project, I wanted both the input and the output to be physical. I began by using a Kinect to record motion capture data of various actions, including ballet, martial arts, and gymnastics. Then, I put each action's data into a Processing program I wrote to convert the action into real-time instructions for an AxiDraw robot, which was fitted with a paintbrush instead of a pen.<br><br>The robot would ``draw'' a dot in the location of a certain paint tray. Then, it would use the x and y coordinates of a particular joint over time to determine where to move its brush on the paper. Finally, it would dip the brush in water and wipe it off on a paper towel. This was repeated in a different color for every joint that was to be painted (in my case, this was the wrists and ankles).<br><br>I really enjoyed examining the final paintings and noticing details in the motion, or places where the Kinect appears to have lost track of the body part for a moment. Some of my favorite results are the of Pas de Chat paintings, a set of four paintings based on three different trials of the same dance move. I think it's fascinating to see what things are the same or different between them. You can view a few of my favorite <span class="bold">Tracing Movement</span> paintings below, or <a href="https://github.com/JacquiwithaQ/Interactivity-and-Computation/tree/master/Motion_Tracer" class="text_link" target="_blank">read the code on GitHub</a>.</span><br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/pirouette.jpg" data-lightbox="tracing_movement" data-title="A generated painting of an arabesque and pirouette."><img class="small_image tracing_movement" src="data/projects/pirouette_small.jpg"></a>
+          <a href="data/projects/martial_arts.jpg" data-lightbox="tracing_movement" data-title="A generated painting of several martial arts movements.">
+          <img class="small_image tracing_movement" src="data/projects/martial_arts_small.jpg">
+          </a>
+          <a href="data/projects/pas_de_chat2.jpg" data-lightbox="tracing_movement" data-title="A generated painting of a pas de chat (one of several; I wanted to see how multiple trials of the same dance move would look).">
+          <img class="small_image tracing_movement" src="data/projects/pas_de_chat2_small.jpg">
+          </a>
+          <a href="data/projects/pas_de_chat4.jpg" data-lightbox="tracing_movement" data-title="A generated painting of a pas de chat (one of several; I wanted to see how multiple trials of the same dance move would look).">
+          <img class="small_image tracing_movement" src="data/projects/pas_de_chat4_small.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 3 -->
+    <span class="title">Genesong</span>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o8yjjUd0A58?rel=0" class="video" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">Generative Songbook</span><br>
+    <span class="subtitle">2016</span><br><br>
+    <span class="description"><span class="bold">Genesong</span> (a portmanteau of ``Genesis'' and ``Song'') was my submission for a <a href="https://github.com/NaNoGenMo/2016/issues/148" class="text_link" target="_blank">NaNoGenMo generative book assignment</a> in the class "Interactivity and Computation." I chose to generate sheet music over other types of content because I've always been interested in music theory, and wanted to see how much of it I could incorporate. After researching various principles of music theory, I wrote a program in Processing that generates a sixty-page songbook each time it is run.<br><br>To generate a song, the program first chooses a key, chord progression, and rhyme scheme. Then each line in the song is generated independently using the appropriate chord as a guide. Finally, it assigns one syllable to each note in the song using RiTa's random word generator and a random syllable generator that I wrote, making sure that the song follows the specified rhyme scheme. This information is then arranged on the page in the form of piano music, along with a song title (pulled from the chorus' lyrics), guitar chords, and random adverbs to describe how the song should be played. More details about this process can be found in <a href="http://cmuems.com/2016/60212/jaqaur/10/27/jaqaur-book/" class="text_link"> my blog post about the project</a>. <br><br>One thing I like about <span class="bold">Genesong</span> is that it creates more than just a physical book you can flip through; it creates actual music that you can play and hear. However, in its current state the songs aren't very sophisticated and the lyrics have no meaning. I would like to revisit this idea in the future, and perhaps use machine learning to generate the notes and lyrics. You can find the code for <span class="bold">Genesong</span>, and some example PDFs it generated, on <a href="https://github.com/JacquiwithaQ/Interactivity-and-Computation/tree/master/Song_Book" class="text_link" target="_blank">GitHub</a>.</span><br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/genesong1.jpg" data-lightbox="genesong" data-title="The cover of a printed copy of Genesong. Though the pages are different every time, this cover is always the same.">
+          <img class="small_image genesong" src="data/projects/genesong1_small.jpg">
+          </a>
+          <a href="data/projects/genesong2.jpg" data-lightbox="genesong" data-title="An example of a song that was generated by Genesong. The first page contains the three verses, and the second page contains the chorus. In addition to notes, guitar chords are displayed above the staff. The lyrics, while rhyming, are complete gibberish.">
+          <img class="small_image genesong" src="data/projects/genesong2_small.jpg">
+          </a>
+          <a href="data/projects/genesong3.jpg" data-lightbox="genesong" data-title="A close up of the first line of a song in Genesong. This song is in E-flat, and asks to be played 'objectively' (a randomly-generated adverb; each song is given one).">
+          <img class="small_image genesong" src="data/projects/genesong3_small.jpg">
+          </a>
+          <a href="data/projects/genesong4.jpg" data-lightbox="genesong" data-title="The back cover of a printed copy of Genesong, and the only thing I have to manually edit for each copy. Rather than choose five random song titles from the book to go on the back, I wanted to pick my five favorites to represent the book.">
+          <img class="small_image genesong" src="data/projects/genesong4_small.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 2 -->
+    <span class="title">Decidable</span>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lFQSUJT31nc?rel=0" class="video" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">Web Application</span><br>
+    <span class="subtitle">2016</span><br><br>
+    <span class="description">I made this website in a group with two other students as our final project for Google's Computer Science Summer Institute in 2016. We were given a few days to develop a web application, and chose to make one that would help people make decisions. The functionality is pretty simple: users are given a table where they can enumerate as many options as they have, and any factors they wish to consider. Each factor can be given a weight up to ten (the default is 1), and each option can be assigned a score up to ten for each factor (the default is 0). Then, when the table is filled out, the user can click the ``decide'' button to receive a ranked list of their top options based on their total weighted scores. Though the computation involved is not very complicated, I have found <span class="bold">Decidable</span> useful for objectively comparing otherwise overwhelming options.<br><br>
+    I was in charge of writing the JavaScript and Python for this project, two languages I had learned just a week before. The most difficult issue I faced was implementing the buttons to add and remove rows and columns in the table. It was important to me that these buttons did not reload the page and cause users to lose any data they had already entered. So, I made the buttons modify the page's existing html with every click, inserting and deleting table rows and columns. and giving every cell a unique id so that the decision-making calculation would work. You can <a href="https://github.com/JacquiwithaQ/Decidable" class="text_link" target="_blank">view my code on GitHub</a>, or <a href="http://decidable-plus.appspot.com/" class="text_link" target="_blank">try out <span class="bold">Decidable</span> for yourself</a>.</span><br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/decidable1.jpg" data-lightbox="decidable" data-title="The Decidable homepage, with large links to some of our pre-made template charts.">
+          <img class="small_image decidable" src="data/projects/decidable1_small.jpg">
+          </a>
+          <a href="data/projects/decidable2.jpg" data-lightbox="decidable" data-title="An example of an empty Decidable chart. Many aspects of the table are editable by the user, including the factor names, option names, and 'Big Question'.">
+          <img class="small_image decidable" src="data/projects/decidable2_small.jpg">
+          </a>
+          <a href="data/projects/decidable3.jpg" data-lightbox="decidable" data-title="One of Decidable's pre-made templates, modeled slightly after a real spreadsheet I had made for myself to help me decide what college to attend.">
+          <img class="small_image decidable" src="data/projects/decidable3_small.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--Project 1 -->
+    <span class="title">Masks</span>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xIOTVhuhmFY" frameborder="0" class="video" allow="encrypted-media" allowfullscreen></iframe>
+    <br>
+    <span class="subtitle">Short Film</span><br>
+    <span class="subtitle">2014</span><br><br>
+    <span class="description"><span class="bold">Masks</span> was the first short film I directed in high school. I adapted the screenplay from Shel Silverstein's poem of the same name, and got a cast and crew of volunteers from my high school's drama department. With next to no budget, I shot the film on a borrowed camcorder and edited it with iMovie on a library computer. I had to experiment with unique ways to achieve different effects, including using split-screen to change a character's reflection, and pulling the camera on a skateboard to get a ground level tracking shot. Given its very humble production value, I was amazed by how well this film was received.<br><br>
+    In the 2014-2015 <a href="http://onevoice.pta.org/?p=5955" class="text_link" target="_blank">PTA Reflections</a> fine arts competition, <span class="bold">Masks</span> won the local, regional, and state levels of the film production category, before receiving the ``Outstanding Interpretation'' award (the highest honor, given to one student each year) at the national contest. It was an official selection at the 2015 <a href="http://www.landlockedfilmfestival.org/" class="text_link" target="_blank">Landlocked Film Festival</a> and the 2015 <a href="http://www.crifm.org/" class="text_link" target="_blank">Cedar Rapids Independent Film Festival</a>, where it also won the award ``Best Student Short.'' Though I have gotten my own equipment and directed other short films since, <span class="bold">Masks</span> remains my favorite film project that I have worked on. If you're interested, you can <a href="https://www.youtube.com/embed/gccdiHq5ueU" class="text_link" target="_blank"> watch another short film of mine here</a>.
+    </span><br><br>
+    <div class="table center">
+      <div class="row">
+        <div class="cell">
+          <a href="data/projects/masks1.png" data-lightbox="masks" data-title="One of the trickier shots in the film. We shot this with and without the mask, and then used split screen in iMovie to play both versions at the same time, using one for the boy and the other for his reflection.">
+          <img class="small_image masks" src="data/projects/masks1_small.png">
+          </a>
+          <a href="data/projects/masks2.png" data-lightbox="masks" data-title="I knew from the beginning of production that I wanted to do some ground-level tracking shots like this, but I wasn't sure how I would do it until the day we filmed them. After realizing that holding the camera close to the ground and walking with it would not be very successful, several members of our cast and crew came together to contruct a rig out of a prop skateboard and a necktie. It worked surprisingly well, and I ended up using this very same technique in a later short film, too.">
+          <img class="small_image masks" src="data/projects/masks2_small.png">
+          </a>
+          <a href="data/projects/masks3.jpg" data-lightbox="masks" data-title="Me accepting the 'Golden Eddy' for 'Best Student Short' at the 2015 Cedar Rapids Independent Film Festival. This was my first win at a festival and I was much happier about it than my expression in this photo suggests.">
+          <img class="small_image masks" src="data/projects/masks3_small.jpg">
+          </a>
+          <a href="data/projects/masks4.jpg" data-lightbox="masks" data-title="The winners of the seven different categories of the National PTA Reflections Fine Arts Contest stand with their awards (I am in the front row, far right).">
+          <img class="small_image masks" src="data/projects/masks4_small.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <div id="footer"></div>
+<script src="external/lightbox-plus-jquery.js"></script>
+</body>
+</html>
