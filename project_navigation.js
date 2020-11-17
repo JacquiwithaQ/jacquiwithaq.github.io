@@ -39,6 +39,12 @@ function load_project(){
       case "genesong" : 
         select_genesong();
         break;
+      case "puzzlehunt" : 
+        select_puzzlehunt();
+        break;
+      case "filmtheatre" : 
+        select_filmtheatre();
+        break;
       default : 
         load_grid();
         break;
@@ -85,6 +91,12 @@ function load_grid(){
       });
       $( "#genesong_button" ).click(function() {
         document.location.search = ["project=genesong"];
+      });
+      $( "#puzzlehunt_button" ).click(function() {
+        document.location.search = ["project=puzzlehunt"];
+      });
+      $( "#filmtheatre_button" ).click(function() {
+        document.location.search = ["project=filmtheatre"];
       });
   });
 }
@@ -161,6 +173,18 @@ function select_genesong(){
   $( "#genesong" ).addClass( "sidebar_selected");
 }
 
+function select_puzzlehunt(){
+  $( "#content" ).load("projects/puzzlehunt.html");
+  $( ".sidebar_selected").removeClass( "sidebar_selected" );
+  $( "#puzzlehunt" ).addClass( "sidebar_selected");
+}
+
+function select_filmtheatre(){
+  $( "#content" ).load("projects/filmtheatre.html");
+  $( ".sidebar_selected").removeClass( "sidebar_selected" );
+  $( "#filmtheatre" ).addClass( "sidebar_selected");
+}
+
 function load_framework(){
     $("#navbar").load("header.html", function() {$("#projects_tab").addClass( "selected" );}); 
     $("#footer").load("footer.html");
@@ -200,6 +224,12 @@ function load_framework(){
       });
       $( "#genesong" ).click(function() {
         document.location.search = ["project=genesong"];
+      });
+      $( "#puzzlehunt" ).click(function() {
+        document.location.search = ["project=puzzlehunt"];
+      });
+      $( "#filmtheatre" ).click(function() {
+        document.location.search = ["project=filmtheatre"];
       });
       load_project();
     });

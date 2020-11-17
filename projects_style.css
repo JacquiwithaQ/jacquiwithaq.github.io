@@ -75,6 +75,8 @@
 }
 
 #project_content .image_box {
+  width: 90%;
+  max-width: 750px;
   margin-right: auto;
   margin-left: auto;
   font-size: 10pt;
