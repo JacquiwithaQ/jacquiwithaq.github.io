@@ -6,8 +6,8 @@ function load_project(){
       case "pinchtype": 
         select_pinchtype();
         break;
-      case "strokesketch": 
-        select_stroke();
+      case "doodlebugs": 
+        select_doodle();
         break;
       case "15bricks" : 
         select_brick();
@@ -59,8 +59,8 @@ function load_grid(){
       $( "#pinchtype_button" ).click(function() {
         document.location.search = ["project=pinchtype"];
       });
-      $( "#stroke_button" ).click(function() {
-        document.location.search = ["project=strokesketch"];
+      $( "#doodle_button" ).click(function() {
+        document.location.search = ["project=doodlebugs"];
       });
       $( "#brick_button" ).click(function() {
         document.location.search = ["project=15bricks"];
@@ -107,10 +107,10 @@ function select_pinchtype(){
   $( "#pinchtype" ).addClass( "sidebar_selected");
 }
 
-function select_stroke(){
-  $( "#content" ).load("projects/stroke.html");
+function select_doodle(){
+  $( "#content" ).load("projects/doodle_bugs.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
-  $( "#stroke" ).addClass( "sidebar_selected");
+  $( "#doodle" ).addClass( "sidebar_selected");
 }
 
 function select_brick(){
@@ -192,8 +192,8 @@ function load_framework(){
       $( "#pinchtype" ).click(function() {
         document.location.search = ["project=pinchtype"];
       });
-      $( "#stroke" ).click(function() {
-        document.location.search = ["project=strokesketch"];
+      $( "#doodle" ).click(function() {
+        document.location.search = ["project=doodlebugs"];
       });
       $( "#bricks" ).click(function() {
         document.location.search = ["project=15bricks"];
