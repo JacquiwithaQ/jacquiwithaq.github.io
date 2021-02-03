@@ -16,7 +16,7 @@
 }
 
 .section_header {
-  font-family: "young";
+  font-family: "Young", sans-serif;
   color: var(--dark-color);
   font-size: 32pt;
   font-weight: bolder;

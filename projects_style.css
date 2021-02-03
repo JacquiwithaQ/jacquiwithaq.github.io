@@ -20,8 +20,14 @@
   margin-left: auto;
 }
 
+@media all and (max-width: 480px) {
+  #project_content {
+    padding: 0px 10px 10px 10px;
+  }
+}
+
 #project_content .title {
-  font-family: "young";
+  font-family: "Young", sans-serif;
   width: 100%;
   display: block;
   font-size: 34pt;
@@ -31,7 +37,7 @@
 }
 
 #project_content .subtitle {
-  font-family: "young";
+  font-family: "Young", sans-serif;
   width: 100%;
   display: block;
   font-size: 18pt;
@@ -41,7 +47,7 @@
 }
 
 #project_content .details {
-  font-family: "young";
+  font-family: "Young", sans-serif;
   width: 100%;
   display: block;
   font-size: 16pt;
@@ -82,7 +88,7 @@
   margin-left: auto;
   font-size: 10pt;
   font-style: italic;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   position: relative;
 }
@@ -91,9 +97,19 @@
   width: 100%;
 }
 
+.image_box img.white{
+  border: 1px solid #888888;
+}
+
 #project_content .big {
   width: 90%;
 }
 
+#project_content .image_box.square {
+  max-width: 550px;
+}
 
+#project_content .image_box.tall {
+  max-width: 450px;
+}
 

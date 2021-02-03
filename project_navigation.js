@@ -102,85 +102,85 @@ function load_grid(){
 }
 
 function select_pinchtype(){
-  $( "#content" ).load("projects/pinchtype.html");
+  $( "#content" ).load("project_pages/pinchtype.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#pinchtype" ).addClass( "sidebar_selected");
 }
 
 function select_doodle(){
-  $( "#content" ).load("projects/doodle_bugs.html");
+  $( "#content" ).load("project_pages/doodle_bugs.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#doodle" ).addClass( "sidebar_selected");
 }
 
 function select_brick(){
-  $( "#content" ).load("projects/bricks.html");
+  $( "#content" ).load("project_pages/bricks.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#bricks" ).addClass( "sidebar_selected");
 }
 
 function select_rebus(){
-  $( "#content" ).load("projects/rebus_chat.html");
+  $( "#content" ).load("project_pages/rebus_chat.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#rebus" ).addClass( "sidebar_selected");
 }
 
 function select_astraea(){
-  $( "#content" ).load("projects/astraea.html");
+  $( "#content" ).load("project_pages/astraea.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#astraea" ).addClass( "sidebar_selected");
 }
 
 function select_vrhome(){
-  $( "#content" ).load("projects/vr_home.html");
+  $( "#content" ).load("project_pages/vr_home.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#vrhome" ).addClass( "sidebar_selected");
 }
 
 function select_pickmeup(){
-  $( "#content" ).load("projects/pick_me_up.html");
+  $( "#content" ).load("project_pages/pick_me_up.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#pickmeup" ).addClass( "sidebar_selected");
 }
 
 function select_emop(){
-  $( "#content" ).load("projects/emop.html");
+  $( "#content" ).load("project_pages/emop.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#emop" ).addClass( "sidebar_selected");
 }
 
 function select_descent(){
-  $( "#content" ).load("projects/infinite_descent.html");
+  $( "#content" ).load("project_pages/infinite_descent.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#descent" ).addClass( "sidebar_selected");
 }
 
 function select_deepstock(){
-  $( "#content" ).load("projects/deepstock.html");
+  $( "#content" ).load("project_pages/deepstock.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#deepstock" ).addClass( "sidebar_selected");
 }
 
 function select_tracing(){
-  $( "#content" ).load("projects/tracing_movement.html");
+  $( "#content" ).load("project_pages/tracing_movement.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#tracing" ).addClass( "sidebar_selected");
 }
 
 function select_genesong(){
-  $( "#content" ).load("projects/genesong.html");
+  $( "#content" ).load("project_pages/genesong.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#genesong" ).addClass( "sidebar_selected");
 }
 
 function select_puzzlehunt(){
-  $( "#content" ).load("projects/puzzlehunt.html");
+  $( "#content" ).load("project_pages/puzzlehunt.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#puzzlehunt" ).addClass( "sidebar_selected");
 }
 
 function select_filmtheatre(){
-  $( "#content" ).load("projects/filmtheatre.html");
+  $( "#content" ).load("project_pages/filmtheatre.html");
   $( ".sidebar_selected").removeClass( "sidebar_selected" );
   $( "#filmtheatre" ).addClass( "sidebar_selected");
 }
