@@ -1,0 +1,10 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+  <g transform="translate(15,15)">
+      <path
+        d="M -10 -18 L -3 -18 M -10 -14 L -3 -14 M -10 -10 L -3 -10 M -10 -6 L -3 -6 M -10 -2 L -3 -2 M -10 2 L -3 2 M -10 6 L -3 6 M -10 10 L -3 10 M -10 14 L -3 14 M -10 18 L -3 18"
+        style="fill:none;stroke:black;stroke-width:1.5"
+        vector-effect="non-scaling-stroke"
+        stroke-linejoin="flat"
+        transform="translate(0,0) scale(0.8)" />
+  </g>
+</svg>

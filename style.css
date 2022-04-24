@@ -194,3 +194,7 @@ a {
 .bold {
   font-weight: bolder;
 }
+
+.horizontally-scrollable {
+  overflow-x: auto;
+}

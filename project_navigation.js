@@ -3,6 +3,9 @@ function load_project(){
   if (urlParams.has("project")){
     project = urlParams.get("project");
     switch (project) {
+      case "timescript": 
+        select_timescript();
+        break;
       case "pinchtype": 
         select_pinchtype();
         break;
@@ -56,6 +59,9 @@ function load_project(){
 
 function load_grid(){
   $( "#content" ).load("projects_navigation.html", function() {
+      $( "#timescript_button" ).click(function() {
+        document.location.search = ["project=timescript"];
+      });
       $( "#pinchtype_button" ).click(function() {
         document.location.search = ["project=pinchtype"];
       });
@@ -99,6 +105,12 @@ function load_grid(){
         document.location.search = ["project=filmtheatre"];
       });
   });
+}
+
+function select_timescript(){
+  $( "#content" ).load("project_pages/timescript.html");
+  $( ".sidebar_selected").removeClass( "sidebar_selected" );
+  $( "#timescript" ).addClass( "sidebar_selected");
 }
 
 function select_pinchtype(){
@@ -189,6 +201,9 @@ function load_framework(){
     $("#navbar").load("header.html", function() {$("#projects_tab").addClass( "selected" );}); 
     $("#footer").load("footer.html");
     $("#sidebar").load("projects_sidebar.html", function() {
+      $( "#timescript" ).click(function() {
+        document.location.search = ["project=timescript"];
+      });
       $( "#pinchtype" ).click(function() {
         document.location.search = ["project=pinchtype"];
       });

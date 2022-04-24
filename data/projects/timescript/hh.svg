@@ -1,0 +1,28 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+  <g transform="translate(15,15) scale(1)">
+    <circle 
+        cx="-5" cy="-14" r="1"
+        style="fill:black;stroke:none;" />
+    <circle 
+        cx="-5" cy="-10" r="1"
+        style="fill:black;stroke:none;" />
+    <circle 
+        cx="-5" cy="-6" r="1"
+        style="fill:black;stroke:none;" />
+    <circle 
+        cx="-5" cy="-2" r="1"
+        style="fill:black;stroke:none;" />
+    <circle 
+        cx="-5" cy="2" r="1"
+        style="fill:black;stroke:none;" />
+    <circle 
+        cx="-5" cy="6" r="1"
+        style="fill:black;stroke:none;" />
+    <circle 
+        cx="-5" cy="10" r="1"
+        style="fill:black;stroke:none;" />
+    <circle 
+        cx="-5" cy="14" r="1"
+        style="fill:black;stroke:none;" />
+  </g>
+</svg>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timescript</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Conscript, Writing, Code, Puzzle, Language, Phonetic">
+  <meta name="description" content="Timescript is a decorative writing system where time (ie. movement) is a critical feature. It encodes the sounds used to say a phrase, rather than the letters used to spell it, in an infinitely looping animation that cannot be read when paused. This guide describes how to read and write in Timescript.">
+  <meta name="author" content="Jacqui Fashimpaur">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Guide to Timescript"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://www.jacquifashimpaur.com"/>
+  <meta property="og:image" content="data/preview-timescript.png"/>
+  <meta property="og:description" content="Timescript is a decorative writing system where time (ie. movement) is a critical feature. It encodes the sounds used to say a phrase, rather than the letters used to spell it, in an infinitely looping animation that cannot be read when paused. This guide describes how to read and write in Timescript."/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="free_page_style.css">
+  <link rel="stylesheet" type="text/css" href="timescript_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon"
+      type="image/png"
+      href="data/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script> 
+  $(function(){
+    $("#navbar").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });
+  </script>
+</head>
+<body>
+  <div id="navbar"></div>
+  <div id="content" class="timescript">
+    <div class="title">Guide to Timescript</div><br>
+    <div class="body-text">Timescript is a decorative writing system that encodes phrases in 2D animations that can only be read while they're moving. It was designed by Jacqui Fashimpaur for the puzzle <a href="https://2021.teammatehunt.com/puzzles/time-of-your-life" class="text_link" target="_blank">"Time of Your Life"</a> in Teammate Hunt 2021, and is now free for anyone to use. This guide describes how to read and write in Timescript.</div>
+    <div style="width: 100%; text-align: center">
+      <div class="big-message-box">
+        <div class="big-message-container">
+          <img class="big-message-background" src="data/projects/timescript/message0-bg.svg" />
+          <img
+            class="big-message-animation"
+            src="data/projects/timescript/message0.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="subtitle">Overview</div><br>
+    <div class="body-text">
+    Timescript uses animated shapes to encode the sounds (not letters) of a phrase. All phonetic information is conveyed through elements that are moving, and these must remain visible at all times. Stationary shapes can provide locations to "teleport" sliding items, serve as reference points for measuring the speed of something, or simply be decorative.</div><br>
+    <div class="subtitle">Syllables</div><br>
+    <div class="body-text">
+    Each moving part (that is, each set of shapes moving together as if they were attached to the same rigid line) represents a single syllable. Every shape that appears in the syllable represents a sound (see below), read in standard reading order (left-to-right, top-to-bottom). For syllables with rotational movement, apply this "reading order" when they are at their right-most position. Within-syllable reading order is also demonstrated in the vowel table below. Syllables are ordered by the relative speed of their movement, from shortest period (fastest) to longest period (slowest). I recommend designing your encoding such that sliding syllables also have the appropriate relative velocities, so those with shorter periods are visibly moving faster. </div><br>
+    <div class="subtitle">Vowels</div><br>
+    <div class="body-text">
+    Each syllable gets one vowel sound (diphthongs are considered unique vowel sounds). The position of the vowel is marked by a short line intersecting the primary "stem" at ninety degress. The vowel sound is specified by the nature of the syllable's movement, including both movement direction and relative orientation (for example, a revolving syllable that is parallel to its radius of rotation would have a different vowel sound than one perpendicular to the radius).<br><br>
+    Since there are many vowel sounds, some of which are affected by their neighbouring consonants and most of which are used differently depending on dialect, Timescript currently has fourteen broad vowel categories. I recommend using the closest match to your pronunciation. Sometimes there will be multiple correct encodings.<br><br>
+    The table below illustrates all of the currently defined vowel sounds. They are all presented following the K sound to demonstrate reading order.</div><br>
+    <div class="horizontally-scrollable">
+    <table>
+      <tr>
+        <td style="width: 12.5%">
+          <img class="vowel" src="data/projects/timescript/oh.svg" />
+        </td>
+        <td style="width: 35%">
+          <b>OH</b>
+          <br />g<b>o</b>, h<b>o</b>me, f<b>ou</b>r
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 12.5%">
+          <img class="vowel" src="data/projects/timescript/ay.svg" />
+        </td>
+        <td style="width: 35%">
+          <b>AY</b>
+          <br />d<b>ay</b>, s<b>a</b>me, c<b>a</b>re
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="vowel" src="data/projects/timescript/eh.svg" />
+        </td>
+        <td>
+          <b>EH</b>
+          <br />s<b>e</b>t, <b>e</b>nd, b<b>e</b>ll
+        </td>
+        <td class="separator"></td>
+        <td>
+          <img class="vowel" src="data/projects/timescript/ee.svg" />
+        </td>
+        <td>
+          <b>EE</b>
+          <br />w<b>ee</b>k, f<b>ea</b>r, s<b>ee</b>m
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="vowel" src="data/projects/timescript/ah.svg" />
+        </td>
+        <td style="padding-left: 10px; padding-right: 10px;">
+          <b>AH</b>
+          <br /><b>o</b>dd, d<b>aw</b>n, st<b>a</b>rt
+          <br /><span class="smaller-text">(optionally move down for c<b>au</b>ght rather than c<b>o</b>t)</span>
+        </td>
+        <td class="separator"></td>
+        <td>
+          <img class="vowel" src="data/projects/timescript/ai.svg" />
+        </td>
+        <td>
+          <b>AI</b>
+          <br />t<b>i</b>me, k<b>i</b>te, f<b>i</b>re
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="vowel" src="data/projects/timescript/oo.svg" />
+        </td>
+        <td>
+          <b>OO</b>
+          <br />s<b>oo</b>n, t<b>oo</b>l, m<b>oo</b>r<br />
+        </td>
+        <td class="separator"></td>
+        <td>
+          <img class="vowel" src="data/projects/timescript/ow.svg" />
+        </td>
+        <td>
+          <b>OW</b>
+          <br />h<b>ow</b>, f<b>ow</b>l, s<b>ou</b>r
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="vowel" src="data/projects/timescript/uh.svg" />
+        </td>
+        <td>
+          <b>UH</b>
+          <br />r<b>u</b>n, l<b>o</b>ve, <b>u</b>p
+        </td>
+        <td class="separator"></td>
+        <td>
+          <img class="vowel" src="data/projects/timescript/oy.svg" />
+        </td>
+        <td>
+          <b>OY</b>
+          <br />t<b>oy</b>, b<b>oi</b>l, p<b>oi</b>nt
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="vowel" src="data/projects/timescript/er.svg" />
+        </td>
+        <td>
+          <b>(schwa)</b> *
+          <br />sev<b>e</b>n, w<b>o</b>rk, middl<b>e</b>
+        </td>
+         <td class="separator"></td>
+        <td>
+          <img class="vowel" src="data/projects/timescript/ae.svg" />
+        </td>
+        <td>
+          <b>A</b>
+          <br /><b>a</b>nd, s<b>a</b>t, r<b>a</b>lly
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="vowel" src="data/projects/timescript/uu.svg" />
+        </td>
+        <td>
+          <b>U</b> *
+          <br />f<b>u</b>ll, b<b>oo</b>k, g<b>oo</b>d
+        </td>
+        <td class="separator"></td>
+        <td>
+          <img class="vowel" src="data/projects/timescript/ih.svg" />
+        </td>
+        <td>
+          <b>IH</b>
+          <br />s<b>i</b>t, h<b>i</b>m, f<b>i</b>ll
+        </td>
+      </tr>
+    </table>
+  </div><br>
+  <div class="body-text small-text">* If all consonants have rotational symmetry, readers will have to try both possible reading directions.</div><br>
+  <div class="subtitle">Consonants</div><br>
+  <div class="body-text">
+  Consonants are each represented by a unique symbol (two similar shapes with different rotation are considered distinct symbols). Consonants appear in order within their syllable, along with one line to mark the position of the vowel sound. They may not overlap and do not affect each other. Other details related to consonants are flexible, like their size, rotation speed, reflection over the syllable's center line, and whether or not that line bisects them.<br><br>
+  The table below illustrates all currently defined consonant sounds. They are presented as if part of a vertically oriented syllable without the syllable line bisecting them.</div><br>
+  <div class="horizontally-scrollable">
+    <table>
+      <tr>
+        <td style="width: 10">
+          <img class="consonant" src="data/projects/timescript/pp.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>P</b> as in <b>p</b>ig
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/bb.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>B</b> as in <b>b</b>at
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/dd.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>D</b> as in <b>d</b>og
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 10">
+          <img class="consonant" src="data/projects/timescript/nn.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>N</b> as in <b>n</b>ose
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%; padding-left: 5px; padding-right: 5px;">
+          <img class="consonant" src="data/projects/timescript/mm.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>M</b> as in <b>m</b>outh
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/ng.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>NG</b> as in lu<b>ng</b>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 10">
+          <img class="consonant" src="data/projects/timescript/tt.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>T</b> as in <b>t</b>ear
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/gg.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>G</b> as in <b>g</b>ear
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/yy.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>Y</b> as in <b>y</b>ear
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 10">
+          <img class="consonant" src="data/projects/timescript/ss.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>S</b> as in <b>s</b>oon
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/zz.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>Z</b> as in <b>z</b>oom
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/ff.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>F</b> as in <b>f</b>ar
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 10">
+          <img class="consonant" src="data/projects/timescript/vv.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>V</b> as in <b>v</b>ain
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/th.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>TH</b> as in <b>th</b>in
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/dh.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>DH</b> as in <b>th</b>e
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 10">
+          <img class="consonant" src="data/projects/timescript/sh.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>SH</b> as in <b>sh</b>oe
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/rr.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>R</b> as in <b>r</b>ed
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/zh.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>ZH</b> as in vi<b>s</b>ion
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 10">
+          <img class="consonant" src="data/projects/timescript/kk.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>K</b> as in <b>k</b>ick
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/jj.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>J</b> as in <b>j</b>ump
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/ww.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>W</b> as in <b>w</b>alk
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 10">
+          <img class="consonant" src="data/projects/timescript/ll.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>L</b> as in <b>l</b>ow
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/hh.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>H</b> as in <b>h</b>igh
+        </td>
+        <td class="separator" style="width: 5%"></td>
+        <td style="width: 10%">
+          <img class="consonant" src="data/projects/timescript/ch.svg" />
+        </td>
+        <td style="width: 20%; padding-left: 5px; padding-right: 5px;">
+          <b>ch</b> as in <b>ch</b>eck
+        </td>
+      </tr>
+    </table>
+  </div><br>
+  <div class="subtitle">Examples</div><br>
+  <div class="body-text">Try to read the following six phrases. Solutions are at the bottom of this section.</div><br>
+  <div style="width:100%; text-align: center;">
+        <div class="square-animation-box">
+        <div class="square-message-container">
+          <img class="square-message-background" src="data/projects/timescript/message1-bg.svg" />
+          <img
+            class="square-message-animation"
+            src="data/projects/timescript/message1.svg"
+          />
+        </div>
+        </div>
+        <div class="square-animation-box">
+        <div class="square-message-container">
+          <img class="square-message-background" src="data/projects/timescript/message2-bg.svg" />
+          <img
+            class="square-message-animation"
+            src="data/projects/timescript/message2.svg"
+          />
+        </div>
+        </div>
+        <div class="square-animation-box">
+        <div class="square-message-container">
+          <img class="square-message-background" src="data/projects/timescript/message3-bg.svg" />
+          <img
+            class="square-message-animation"
+            src="data/projects/timescript/message3.svg"
+          />
+        </div>
+        </div>
+        <div class="square-animation-box">
+        <div class="square-message-container">
+          <img class="square-message-background" src="data/projects/timescript/message4-bg.svg" />
+          <img
+            class="square-message-animation"
+            src="data/projects/timescript/message4.svg"
+          />
+        </div>
+        </div>
+        <div class="square-animation-box">
+        <div class="square-message-container">
+          <img class="square-message-background" src="data/projects/timescript/message5-bg.svg" />
+          <img
+            class="square-message-animation"
+            src="data/projects/timescript/message5.svg"
+          />
+        </div>
+        </div>
+        <div class="square-animation-box">
+        <div class="square-message-container">
+          <img class="square-message-background" src="data/projects/timescript/message6-bg.svg" />
+          <img
+            class="square-message-animation"
+            src="data/projects/timescript/message6.svg"
+          />
+        </div>
+        </div>
+  </div><br>
+  <div class="body-text">The phrases above, in order, are "Time Flies," "Blue Moon," "Now and Then," "Like Clockwork," "Sooner or Later," and "Twenty-Four Seven." For an extra challenge, try translating the message at the top of this guide (it's a quote from "Story of Your Life" by Ted Chiang).</div><br>
+  <div class="subtitle" id="design-notes">Design Notes</div><br>
+  <div class="body-text">
+    The idea of time-based writing was inspired in part by the novella <a href="https://en.wikipedia.org/wiki/Story_of_Your_Life" class="text_link" target="_blank">"Story of Your Life"</a> by Ted Chiang. I didn't just want the symbols in this script to move; I wanted time to be an integral part of it. So I set some design goals for Timescript: a still screenshot of an animated encoding should be impossible to completely translate. For example, many consonant symbols are distinguished only by whether they move clockwise, counterclockwise, or neither. However, a moment of animation should theoretically be enough to distinguish eveything. For example, "oscillating left and right" and "moving constantly left" were not allowed to both be possible.<br><br>
+    Since Timescript was always going to be more decorative than practical, I wanted people writing with it to have creative freedom. Rather than a simple cipher, a Timescript encoding should have an interesting structure that combines all of the parts into one beautiful whole. In this respect I drew inspiration from the fictional writing systems <a href="https://shermansplanet.com/gallifreyan/guide.pdf" class="text_link" target="_blank">Sherman's Gallifreyan</a> and <a href="https://she-raandtheprincessesofpower.fandom.com/wiki/First_Ones_writing" class="text_link" target="_blank">First Ones' Writing</a>. I also took some specific aesthetic ideas from the <a href="https://youtu.be/dd7BILZcYAY?t=5" class="text_link" target="_blank">title sequence</a> of the time travel anime <a href="https://en.wikipedia.org/wiki/Steins;Gate_(TV_series)" class="text_link" target="_blank">Steins;Gate</a>.<br><br>
+    I considered designing Timescript such that its features would correspond to features of phonemes (eg. certain properties representing "front" vs "back" vowels and "voiced" vs "unvoiced" consonants). I found this difficult to consistently achieve while still maintaining visual variety, readbility, and the other properties described above. So I simply assigned symbols and movements to phonemes as I saw fit, considering which sounds were most common and which were most likely to appear together. Vowel sounds proved particularly difficult; there are too many vowel sounds to give them all distinct movement types, and some are extremely similar or dialect-specific. The fact that consonants (especially R) affect nearby vowel sounds makes it all that much worse. My imperfect solution was to define a set of vowel "categories" that might contain multiple sounds. I encourage anyone writing in Timescript to use whatever category feels right to them.
+  </div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>

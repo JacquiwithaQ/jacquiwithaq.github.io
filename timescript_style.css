@@ -1,0 +1,135 @@
+.timescript table {
+  width: 100%;
+  min-width: 480px;
+  max-width: 740px;
+  border-collapse: collapse;
+  align-self: center;
+  margin: auto;
+}
+
+.timescript td {
+  border: 1px solid #000000;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.timescript .separator {
+  border-top: none;
+  border-bottom: none;
+}
+.timescript .vowel {
+  align-self: center;
+  margin: auto;
+  width: 100%;
+}
+.timescript .consonant {
+  align-self: center;
+  margin: auto;
+  width: 80%;
+  margin: 10%;
+}
+.timescript .small-text {
+  font-size: 14px;
+  line-height: 1.2;
+  display: block;
+}
+.timescript .smaller-text {
+  font-size: 12px;
+  line-height: 1.2;
+  display: block;
+}
+
+.timescript .square-animation-box {
+  height: 0px;
+  width: 45%;
+  padding-bottom: 45%;
+  align-self: center;
+  font-size: 10pt;
+  font-style: italic;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+.timescript .square-message-container {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+}
+.timescript .square-message-background {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.timescript .square-message-animation {
+  transform: translateZ(0);
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+.timescript .big-message-box {
+  height: 0px;
+  width: 80%;
+  padding-bottom: 60%;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10pt;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+}
+.timescript .big-message-container {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+}
+.timescript .big-message-background {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.timescript .big-message-animation {
+  transform: translateZ(0);
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+@media (max-width: 680px) {
+
+  .timescript .big-message-box {
+    width: 100%;
+    padding-bottom: 82%;
+  }
+
+  .timescript .square-animation-box {
+    width: 80%;
+    padding-bottom: 80%;
+  }
+
+}
+
+#project_content.timescript .big-message-box {
+  width: 98%;
+  padding-bottom: 79%;
+}
+
+#project_content.timescript .square-animation-box {
+  width: 100%;
+  padding-bottom: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#project_content.timescript .image_box.square {
+  max-width: 460px;
+}
