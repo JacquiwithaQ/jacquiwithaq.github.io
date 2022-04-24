@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+.timescript .ipa {
+  font-family: "Times New Roman", Times, serif;
+}
+
 .timescript td {
   border: 1px solid #000000;
   text-align: center;
