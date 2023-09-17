@@ -97,6 +97,10 @@
   width: 100%;
 }
 
+.image_box video{
+  width: 100%;
+}
+
 .image_box img.white{
   border: 1px solid #888888;
 }

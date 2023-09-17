@@ -3,6 +3,12 @@ function load_project(){
   if (urlParams.has("project")){
     project = urlParams.get("project");
     switch (project) {
+      case "wristscrolling": 
+        select_wristscrolling();
+        break;
+      case "puzzlefactory": 
+        select_puzzlefactory();
+        break;
       case "timescript": 
         select_timescript();
         break;
@@ -59,6 +65,12 @@ function load_project(){
 
 function load_grid(){
   $( "#content" ).load("projects_navigation.html", function() {
+  	  $( "#wristscrolling_button" ).click(function() {
+        document.location.search = ["project=wristscrolling"];
+      });
+  	  $( "#puzzlefactory_button" ).click(function() {
+        document.location.search = ["project=puzzlefactory"];
+      });
       $( "#timescript_button" ).click(function() {
         document.location.search = ["project=timescript"];
       });
@@ -105,6 +117,18 @@ function load_grid(){
         document.location.search = ["project=filmtheatre"];
       });
   });
+}
+
+function select_wristscrolling(){
+  $( "#content" ).load("project_pages/wristscrolling.html");
+  $( ".sidebar_selected").removeClass( "sidebar_selected" );
+  $( "#wristscrolling" ).addClass( "sidebar_selected");
+}
+
+function select_puzzlefactory(){
+  $( "#content" ).load("project_pages/puzzlefactory.html");
+  $( ".sidebar_selected").removeClass( "sidebar_selected" );
+  $( "#puzzlefactory" ).addClass( "sidebar_selected");
 }
 
 function select_timescript(){
@@ -201,6 +225,12 @@ function load_framework(){
     $("#navbar").load("header.html", function() {$("#projects_tab").addClass( "selected" );}); 
     $("#footer").load("footer.html");
     $("#sidebar").load("projects_sidebar.html", function() {
+      $( "#wristscrolling" ).click(function() {
+        document.location.search = ["project=wristscrolling"];
+      });
+      $( "#puzzlefactory" ).click(function() {
+        document.location.search = ["project=puzzlefactory"];
+      });
       $( "#timescript" ).click(function() {
         document.location.search = ["project=timescript"];
       });

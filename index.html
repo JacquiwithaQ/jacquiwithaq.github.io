@@ -13,6 +13,7 @@
   <meta property="og:image" content="data/preview-image.png"/>
   <meta property="og:description" content="Hi, I'm Jacqui. This portfolio website includes my published research, as well as computational art exploring the ways people interact with technology."/>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="project_navigation_style.css">
   <link rel="stylesheet" type="text/css" href="index_style.css">
   <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon"
@@ -35,8 +36,8 @@
     <br><br>
     <span class="small">
       I study human-computer interaction with a focus on virtual reality. I graduated from <a href="https://www.cmu.edu/" class="text_link" target="_blank">Carnegie Mellon University</a> in 2020 with a Bachelor of Science in <a href="https://csd.cmu.edu/academics/undergraduate/overview#bscsexplore" class="text_link" target="_blank">Computer Science</a> and minors in <a href="https://www.cmu.edu/dietrich/english/academic-programs/film-and-visual-media/fvm-minor.html" class="text_link" target="_blank">Film and Media Studies</a> and <a href="https://ideate.cmu.edu/undergraduate-programs/media-design/index.html" class="text_link" target="_blank">Media Design</a>. I'm currently a research engineer with <a href="https://research.fb.com/category/augmented-reality-virtual-reality/" class="text_link" target="_blank">Meta's Reality Labs Research</a> in Redmond, Washington.
-      <br><br><!-- Should it be "interactive" or "immersive"? -->
-      Though I have many interests, they mostly boil down to creating and having <span class="bold">interactive experiences</span>. In addition to VR, my favorite activities include puzzle hunts (I write and solve with <a href="https://teammatehunt.com/" class="text_link" target="_blank">teammate</a>), theatre, cosplay, and tabletop games. I hope to develop technology that enables richer interactions: for work, entertainment, and social connection. The projects on this website include my published research, as well as computational art exploring the ways people interact with technology.
+      <br><br>
+      I'm passionate about all forms of <span class="bold">interactive</span> and <span class="bold">immersive</span> experiences. In addition to VR, my favorite activities include puzzle hunts (I write and solve with <a href="https://teammatehunt.com/" class="text_link" target="_blank">teammate</a>), tabletop games, film, and theatre. I hope to develop technology that enables richer interactions: for work, entertainment, and social connection. The projects on this website include my published research, as well as computational art exploring the ways people interact with technology.
       </span>
       <div id="big_icons">
       <a href="https://www.linkedin.com/in/jacquifashimpaur/" target="_blank">
@@ -51,7 +52,24 @@
       </div>
       <div class="heading">Selected Projects</div>
       <div class="grid">
+    <div class="grid_button" id="wristscrolling_button" onclick='window.location = "/projects?project=wristscrolling";'>
+      <div class="grid_spacer"></div>
+      <div class="grid_label">
+        <span class="title">Wrist Deflection Scrolling</span><br>
+        <span class="subtitle">XR Interaction Research</span>
+      </div>
+      <img class="thumb" src="data/project_thumbnails/wristscrolling_thumb.png">
+    </div>
+    <div class="grid_button" id="puzzlefactory_button" onclick='window.location = "/projects?project=puzzlefactory";'>
+      <div class="grid_spacer"></div>
+      <div class="grid_label">
+        <span class="title">The Puzzle Factory</span><br>
+        <span class="subtitle">MIT Mystery Hunt</span>
+      </div>
+      <img class="thumb" src="data/project_thumbnails/puzzlefactory_thumb.png">
+    </div>
     <div class="grid_button" id="stroke_button" onclick='window.location = "/projects?project=doodlebugs";'>
+      <div class="grid_spacer"></div>
       <div class="grid_label">
         <span class="title">Doodle Bugs</span><br>
         <span class="subtitle">Puzzle Game</span>
@@ -59,6 +77,7 @@
       <img class="thumb" src="data/project_thumbnails/doodle_thumb.png">
     </div>
     <div class="grid_button" id="pinchtype_button" onclick='window.location = "/projects?project=pinchtype";'>
+      <div class="grid_spacer"></div>
       <div class="grid_label">
         <span class="title">PinchType</span><br>
         <span class="subtitle">VR Text Entry Research</span>
@@ -66,6 +85,7 @@
       <img class="thumb" src="data/project_thumbnails/pinchtype_thumb.png">
     </div>
     <div class="grid_button" id="rebus_button" onclick='window.location = "/projects?project=rebuschat";'>
+      <div class="grid_spacer"></div>
       <div class="grid_label">
         <span class="title">Rebus Chat</span><br>
         <span class="subtitle">Messaging App</span>
@@ -73,25 +93,12 @@
       <img class="thumb" src="data/project_thumbnails/rebus_thumb.png">
     </div>
     <div class="grid_button" id="vrhome_button" onclick='window.location = "/projects?project=vrhome";'>
+      <div class="grid_spacer"></div>
       <div class="grid_label">
         <span class="title">VR Home</span><br>
         <span class="subtitle">Virtual Spaces Research</span>
       </div>
       <img class="thumb" src="data/project_thumbnails/vrhome_thumb.png">
-    </div>
-    <div class="grid_button" id="pickmeup_button" onclick='window.location = "/projects?project=pickmeup";'>
-      <div class="grid_label">
-        <span class="title">Pick Me Up</span><br>
-        <span class="subtitle">Animated Short</span>
-      </div>
-      <img class="thumb" src="data/project_thumbnails/pickmeup_thumb.png">
-    </div>
-    <div class="grid_button" id="genesong_button" onclick='window.location = "/projects?project=genesong";'>
-      <div class="grid_label">
-        <span class="title">Genesong</span><br>
-        <span class="subtitle">Generative Songbook</span>
-      </div>
-      <img class="thumb" src="data/project_thumbnails/genesong_thumb.png">
     </div>
   </div>
   </div>
