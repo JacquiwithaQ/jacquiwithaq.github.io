@@ -68,7 +68,7 @@ a {
 .tab {
   display: table-cell;
   text-align: center;
-  font-size: 14pt;
+  font-size: 1.17rem;
   padding: 20px 10px 0px 10px;
   height: 30px;
   max-width: 100px;
@@ -146,17 +146,8 @@ a {
 }
 
 #contact_info {
-  font-size: 14pt;
+  font-size: 1.17rem;
   padding: 20px;
-}
-
-#background_explanation {
-  font-size: 12pt;
-  padding: 20px;
-  width: 60%;
-  /*border-left-width: 2px;
-  border-left-style: solid;
-  border-left-color: #777777;*/
 }
 
 #copyright {

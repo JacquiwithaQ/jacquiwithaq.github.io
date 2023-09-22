@@ -5,6 +5,11 @@
   margin: 40px 60px 25px 0px;
 }
 
+#big_hello {
+  min-width: 115px;
+  overflow: auto;
+}
+
 #big_icons {
   margin-top: 40px;
   text-align: center;
@@ -26,31 +31,69 @@
 }
 
 .big {
-  font-size: 28pt;
+  font-size: 2.34rem; /* 28 pt */
 }
 
 .medium {
-  font-size: 22pt;
+  font-size: 1.83rem; /* 22 pt */
 }
 
 .small {
-  font-size: 14pt;
-  line-height: 26pt;
+  font-size: 1.17rem; /* 14 pt */
+  line-height: 1.85; /* 26 pt */
 }
 
 .heading{
   width: 100%;
   text-align: center;
-  font-size: 26pt;
+  font-size: 2.3rem;
   font-family: "Young", sans-serif;
   margin-top: 40px;
   margin-bottom: 20px;
   clear: both;
 }
 
-#content {
+#all_content {
 	width: 80%;
+  max-width: 900px;
 	margin-right: auto;
 	margin-left: auto;
   overflow: auto;
+}
+
+#upper_content {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: auto;
+}
+
+.grid {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Overriding from project_navigation_styles */
+
+@media (min-width: 780px) {
+  .grid_button {
+    width: 32.1%;
+    margin: 0% 0.5%;
+  }
+}
+
+@media (max-width: 780px) {
+  #all_content {
+    width: 98%;
+  }
+
+  #upper_content {
+    width: 95%;
+  }
+
+  .grid_button {
+    width: 48.7%;
+    margin: 0% 0.5%;
+  }
+
 }
