@@ -25,6 +25,11 @@
 .date {
   font-size: 1.13rem;
   float: right;
+  padding-top: 0.25rem;
+}
+
+.row_with_date {
+  overflow: auto;
 }
 
 .bullet_point {
@@ -69,5 +74,4 @@
   #content {
     width: 90%;
   }
-
 }
