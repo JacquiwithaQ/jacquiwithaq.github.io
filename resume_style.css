@@ -12,28 +12,28 @@
 }
 
 .description {
-  font-size: 1.17rem;
+  font-size: 1rem;
 }
 
 .section_header {
   font-family: "Young", sans-serif;
   color: var(--dark-color);
-  font-size: 32pt;
+  font-size: 2.3rem;
   font-weight: bolder;
 }
 
 .date {
-  font-size: 1.33rem;
+  font-size: 1.13rem;
   float: right;
 }
 
 .bullet_point {
-  font-size: 1.67rem;
+  font-size: 1.42rem;
   font-weight: bolder;
 }
 
 .subtitle {
-  font-size: 1.33rem;
+  font-size: 1.13rem;
   font-weight: bolder;
 }
 
@@ -48,13 +48,13 @@
 .course {
   display: table-cell;
   padding-right: 18px;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: normal;
 }
 
 .description .italic {
   font-style: italic;
-  font-weight: 300px;
+  font-weight: 300;
 }
 
 .description .bold {
@@ -63,4 +63,11 @@
 
 .description .very_bold {
   font-weight: 700;
+}
+
+@media (max-width: 680px) {
+  #content {
+    width: 90%;
+  }
+
 }

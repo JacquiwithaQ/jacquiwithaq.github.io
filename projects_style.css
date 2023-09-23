@@ -1,6 +1,6 @@
 #content {
   margin-left: 260px;
-  padding: 20px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
   height: 100%;
   top: 0;
   bottom: 0;
@@ -20,7 +20,7 @@
   margin-left: auto;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 550px) {
   #project_content {
     padding: 0px 10px 10px 10px;
   }
@@ -30,7 +30,7 @@
   font-family: "Young", sans-serif;
   width: 100%;
   display: block;
-  font-size: 2.83rem;
+  font-size: 2.3rem;
   text-align: center;
   font-weight: bolder;
   margin-top: 40px;
@@ -40,7 +40,7 @@
   font-family: "Young", sans-serif;
   width: 100%;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.28rem;
   text-align: center;
   font-weight: bolder;
   margin-bottom: 40px;
@@ -50,7 +50,7 @@
   font-family: "Young", sans-serif;
   width: 100%;
   display: block;
-  font-size: 1.33rem;
+  font-size: 1.13rem;
   color: var(--dark-color);
   text-align: center;
   font-weight: bolder;
@@ -58,7 +58,7 @@
 }
 
 #project_content .description {
-  font-size: 1.17rem;
+  font-size: 1rem;
   line-height: 1.85;
 }
 
@@ -86,7 +86,7 @@
   max-width: 750px;
   margin-right: auto;
   margin-left: auto;
-  font-size: 0.83rem;
+  font-size: 0.75rem;
   font-style: italic;
   margin-top: 20px;
   margin-bottom: 10px;

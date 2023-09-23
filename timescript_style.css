@@ -33,12 +33,12 @@
   margin: 10%;
 }
 .timescript .small-text {
-  font-size: 1.17rem;
+  font-size: 1rem;
   line-height: 1.2;
   display: block;
 }
 .timescript .smaller-text {
-  font-size: 0.83rem;
+  font-size: 0.75rem;
   line-height: 1.2;
   display: block;
 }
@@ -48,7 +48,7 @@
   width: 45%;
   padding-bottom: 45%;
   align-self: center;
-  font-size: 0.83rem;
+  font-size: 0.75rem;
   font-style: italic;
   margin-left: 2%;
   margin-right: 2%;
@@ -83,7 +83,7 @@
   align-self: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 0.83rem;
+  font-size: 0.75rem;
   font-style: italic;
   position: relative;
   display: inline-block;

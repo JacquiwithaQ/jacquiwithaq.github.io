@@ -68,7 +68,7 @@ a {
 .tab {
   display: table-cell;
   text-align: center;
-  font-size: 1.17rem;
+  font-size: 1.2rem;
   padding: 20px 10px 0px 10px;
   height: 30px;
   max-width: 100px;
@@ -146,7 +146,7 @@ a {
 }
 
 #contact_info {
-  font-size: 1.17rem;
+  font-size: 1rem;
   padding: 20px;
 }
 
@@ -192,4 +192,15 @@ a {
 
 .horizontally-scrollable {
   overflow-x: auto;
+}
+
+@media (max-width: 550px) {
+  #title {
+    width: 92%;
+    text-align: center;
+    float: none;
+    display: block;
+    margin: 1px auto;
+    height: auto;
+  }
 }

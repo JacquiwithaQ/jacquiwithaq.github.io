@@ -31,16 +31,16 @@
 }
 
 .big {
-  font-size: 2.34rem; /* 28 pt */
+  font-size: 1.9rem;
 }
 
 .medium {
-  font-size: 1.83rem; /* 22 pt */
+  font-size: 1.55rem;
 }
 
 .small {
-  font-size: 1.17rem; /* 14 pt */
-  line-height: 1.85; /* 26 pt */
+  font-size: 1rem;
+  line-height: 1.85;
 }
 
 .heading{
@@ -88,7 +88,7 @@
   }
 
   #upper_content {
-    width: 95%;
+    width: 90%;
   }
 
   .grid_button {
@@ -96,4 +96,21 @@
     margin: 0% 0.5%;
   }
 
+}
+
+@media (max-width: 550px) {
+  #homepage_photo {
+    opacity: 1.0;
+    display: block;
+    float: none;
+    width: 80%;
+    margin: 25px auto 0px;
+    text-align: center;
+  }
+
+  #big_hello {
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+  }
 }
