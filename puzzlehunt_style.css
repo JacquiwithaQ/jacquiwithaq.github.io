@@ -1,0 +1,71 @@
+.puzzlehunt table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  align-self: center;
+  margin: auto;
+}
+
+.puzzlehunt th {
+  text-align: left;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #000000;
+  padding: 5px;
+}
+
+.puzzlehunt td {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #000000;
+  padding: 5px;
+}
+
+.puzzlehunt td.centered{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.puzzlehunt th.centered {
+  text-align: center;
+}
+
+.puzzlehunt .separator {
+  border: none;
+}
+
+.puzzlehunt .small-text {
+  font-size: 1rem;
+  line-height: 1.2;
+  display: block;
+}
+.puzzlehunt .smaller-text {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  display: block;
+}
+
+.puzzlehunt .spoiler{
+  background-color: gray;
+  color: transparent;
+  user-select: none;
+}
+
+.puzzlehunt .spoiler:hover{
+  background-color: inherit;
+  color: inherit;
+}
+
+.puzzlehunt .spoiler .text_link{
+  color: transparent;
+}
+
+.puzzlehunt .spoiler:hover .text_link{
+  color: var(--dark-color);
+}
+
+.puzzlehunt .spoiler:hover .text_link:hover{
+  color: var(--light-color);
+}
