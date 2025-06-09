@@ -1,4 +1,4 @@
-project_id_list = ["wristscrolling", "puzzlefactory", "timescript", "pinchtype", "doodlebugs", "15bricks", "rebuschat", "astraea", "vrhome", "pickmeup", "emop", "infinitedescent", "deepstock", "tracingmovement", "genesong"];
+project_id_list = ["deepspacedisaster", "wristscrolling", "puzzlefactory", "timescript", "pinchtype", "doodlebugs", "15bricks", "rebuschat", "astraea", "vrhome", "pickmeup", "emop", "infinitedescent", "deepstock", "tracingmovement", "genesong"];
 project_filter_list = ["publications", "arvr", "puzzlesgames"];
 
 function load_project(){

@@ -100,3 +100,9 @@
   max-width: 450px;
 }
 
+@media (max-width: 680px) {
+  #content {
+    width: 90%;
+  }
+}
+
