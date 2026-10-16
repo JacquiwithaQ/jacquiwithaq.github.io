@@ -1,33 +1,90 @@
-#homepage_photo {
-  opacity: 1.0;
-  float: left;
-  width: 300px;
-  margin: 30px 45px 16px 0px;
+.heading{
+  width: 100%;
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: "Young", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  clear: both;
 }
 
-#big_hello {
-  min-width: 115px;
+#all_content {
+	width: 95%;
+  max-width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
   overflow: auto;
 }
 
-#big_icons {
-  margin-top: 40px;
-  text-align: center;
+#upper_content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+      "photo  bio"
+      "updates bio";
+  gap: 30px;
+  margin: 20px;
+  overflow: auto;
+}
+
+.grid {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#homepage_photo {
+  grid-area: photo;
+}
+
+#homepage_photo img {
   width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: block;
 }
 
-#big_icons a {
+#homepage_photo img:hover {
+  content: url("data/red_blue.jpg");
+}
+
+#recent_updates {
+  grid-area: updates;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+#update_label {
+  flex-shrink: 0;
+}
+
+#update_list {
+  flex-grow: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+#big_hello {
+  min-width: 130px;
+  overflow: auto;
+}
+
+.bio {
+  grid-area: bio;
+  margin: 10px;
+}
+
+#social_icons {
+  display: block;
+  float: right;
+  margin-bottom: 10px;
+}
+
+#social_icons a {
   display: inline-block;
-}
-
-.big_icon {
-  width: 80px;
-  margin: 5px;
-  opacity: 1.0;
-}
-
-.big_icon:hover {
-  opacity: 0.7;
 }
 
 .big {
@@ -43,52 +100,40 @@
   line-height: 1.85;
 }
 
-.heading{
-  width: 100%;
-  text-align: center;
-  font-size: 2.3rem;
-  font-family: "Young", sans-serif;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  clear: both;
-}
-
-#all_content {
-	width: 80%;
-  max-width: 900px;
-	margin-right: auto;
-	margin-left: auto;
-  overflow: auto;
-}
-
-#upper_content {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  overflow: auto;
-}
-
-.grid {
-  margin-right: auto;
-  margin-left: auto;
+.very_small {
+  font-size: 0.75rem;
 }
 
 /* Overriding from project_navigation_styles */
 
-@media (min-width: 780px) {
+@media (min-width: 800px) {
   .grid_button {
     width: 32.1%;
     margin: 0% 0.5%;
   }
+
+  .bio {
+    margin-top: 20px;
+  }
 }
 
-@media (max-width: 780px) {
+.social_icon:hover {
+  opacity: 0.6;
+}
+
+/* Single-Column */
+@media (max-width: 800px) {
   #all_content {
-    width: 98%;
+    max-width: 600px;
   }
 
   #upper_content {
-    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "bio"
+      "updates";
+    gap: 15px;
   }
 
   .grid_button {
@@ -96,15 +141,9 @@
     margin: 0% 0.5%;
   }
 
-}
-
-@media (max-width: 600px) {
   #homepage_photo {
-    opacity: 1.0;
     display: block;
     float: none;
-    width: 80%;
-    margin: 25px auto 0px;
     text-align: center;
   }
 
@@ -113,4 +152,10 @@
     text-align: center;
     overflow: auto;
   }
+
+  #social_icons {
+    float: none;
+    text-align: center;
+  }
+
 }

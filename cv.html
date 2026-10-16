@@ -13,7 +13,7 @@
   <meta property="og:image" content="data/preview-image.png"/>
   <meta property="og:description" content="Hi, I'm Jacqui. This portfolio website includes my published research, digital puzzles, and computational art exploring the ways people interact with technology."/>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="resume_style.css">
+  <link rel="stylesheet" type="text/css" href="cv_style.css">
   <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon"
       type="image/png"
@@ -21,7 +21,7 @@
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script> 
   $(function(){
-    $("#navbar").load("header.html", function() {$("#resume_tab").addClass( "selected" );}); 
+    $("#navbar").load("header.html", function() {$("#cv_tab").addClass( "selected" );}); 
     $("#footer").load("footer.html");
   });
   </script>
@@ -30,19 +30,33 @@
   <div id="navbar"></div>
   <div id="content">
     <span class="description">
-      This is an expanded version of my resume, last updated December 2025.<br>
-      You can also view my <a href="data/jacqui_fashimpaur_cv.pdf" class="text_link" target="_blank">CV</a> and my <a href="data/jacqui_fashimpaur_resume.pdf" class="text_link" target="_blank">one-page resume</a> as PDFs.<br><br>
+      This is an expanded version of my curriculum vitae, last updated October 2026.<br>
+      You can also <a href="data/jacqui_fashimpaur_cv.pdf" class="text_link" target="_blank">view my CV as a PDF</a>.<br><br>
+    </span>
+    <br><span class="section_header">Education</span><br><br>
+    <div class="row_with_date"><span class="bullet_point">Carnegie Mellon University</span><div class="date">August 2026 - Present</div></div>
+    <span class="subtitle">Ph.D. Student, Human-Computer Interaction</span><br>
+    <span class="description">Advised by David Lindlbauer</span><br>
+    <br>
+    <div class="row_with_date"><span class="bullet_point">Carnegie Mellon University</span><div class="date">August 2016 - May 2020</div></div>
+    <span class="subtitle">Bachelor of Science in Computer Science</span><br>
+    <span class="description">
+      <ul>
+      <li><span class="bold">Minors:</span> Media Design, Film and Media Studies</li>
+      <li><span class="bold">QPA (GPA):</span> 3.95</li>
+      <li><span class="bold">Honors:</span> University Honors, Andrew Carnegie Society Scholar, Phi Beta Kappa Member, Senior Leadership Recognition Recipient, Palantir Women in Technology Scholarship</li>
+      </ul>
     </span>
     <br><span class="section_header">Work Experience</span><sbr><br>
-    <div class="row_with_date"><span class="bullet_point">Research Engineer L5&nbsp;&nbsp;&nbsp;</span><div class="date">July 2023 - Present</div></div>
+    <div class="row_with_date"><span class="bullet_point">Research Engineer L5&nbsp;&nbsp;&nbsp;</span><div class="date">July 2023 - March 2026</div></div>
     <div class="row_with_date"><span class="bullet_point">Research Engineer L4&nbsp;&nbsp;&nbsp;</span><div class="date">July 2021 - July 2023</div></div>
     <div class="row_with_date"><span class="bullet_point">Software Engineer L3&nbsp;&nbsp;&nbsp;</span><div class="date">July 2020 - July 2021</div></div>
     <div class="row_with_date"><span class="bullet_point">Software Engineering Intern&nbsp;&nbsp;&nbsp;</span><div class="date">May 2019 - August 2019</div></div>
     <span class="subtitle">Reality Labs Research, Meta</span><br>
     <span class="description">
       <ul>
-        <li>Currently on team investigating wearable input combined with a contextual AI-powered interface</li>
-        <li>Designing and implementing novel interaction techniques with Unity (C#), Kotlin, and multiple prototype devices</li>
+        <li>My team investigated wearable input combined with a contextual AI-powered interface</li>
+        <li>Designed and implemented novel interaction techniques with Unity (C#), Kotlin, and prototype devices</li>
         <li>Authored publications about the projects <a class="text_link" href="/projects?project=pinchtype">PinchType</a>, <a class="text_link" href="/projects?project=wristscrolling">Wrist Deflection Scrolling</a>, and <a class="text_link" href="/projects?project=squiggle">Squiggle</a></li>
       </ul>
     </span><br>
@@ -74,18 +88,8 @@
         <li>The interface was used by YouTube to enable on-call rotations to identify and respond to issues faster, and to keep the organization on track for frequent and reliable releases</li>
       </ul>
     </span>
-    <br><span class="section_header">Education</span><br><br>
-    <div class="row_with_date"><span class="bullet_point">Carnegie Mellon University</span><div class="date">May 2020</div></div>
-    <span class="subtitle">Pittsburgh, PA</span><br>
-    <span class="description">
-      <ul>
-      <li><span class="bold">Degree:</span> Bachelor of Science in Computer Science</li>
-      <li><span class="bold">Minors:</span> Media Design, Film and Media Studies</li>
-      <li><span class="bold">QPA (GPA):</span> 3.95</li>
-      <li><span class="bold">Honors:</span> University Honors, Andrew Carnegie Society Scholar, Phi Beta Kappa Member, Senior Leadership Recognition Recipient, Palantir Women in Technology Scholarship</li>
-      </ul>
-    </span>
     <br><span class="section_header">Publications</span><br><br>
+    <span class="description">Junhan Kong, <span class="very_bold">Jacqui Fashimpaur</span>, Michael J. Proulx, Hemant Bhaskar Surale, Jacob O. Wobbrock, and Amy Karlson. <span class="italic">Quantifying 3D Pointing: Characterizing What Happens During Pointing Selection in Virtual Reality.</span> ICMI 2026.<br>DOI: <a class="text_link" href="https://doi.org/10.1145/3776574.3831138" target="blank">https://doi.org/10.1145/3776574.3831138</a></span><br><br>
     <span class="description"><span class="very_bold">Jacqui Fashimpaur</span>, Tovi Grossman, Ben Lafreniere, Naveen Sendhilnathan, Kashyap Todi, Tianyi Wang, Ting Zhang, and Tanya R. Jonker. <span class="italic">Squiggle: Multimodal Lasso Selection in the Real World.</span> UIST 2025.<br>DOI: <a class="text_link" href="https://doi.org/10.1145/3746059.3747684" target="blank">https://doi.org/10.1145/3746059.3747684</a></span><br><br>
     <span class="description">Jaewook Lee, Tianyi Wang, <span class="very_bold">Jacqui Fashimpaur</span>, Naveen Sendhilnathan, and Tanya R. Jonker. <span class="italic">Walkie-Talkie: Exploring Longitudinal Natural Gaze, LLMs, and VLMs for Query Disambiguation in XR.</span> CHI EA 2025.<br>DOI: <a class="text_link" href="https://doi.org/10.1145/3706599.3720236" target="blank">https://doi.org/10.1145/3706599.3720236</a></span><br><br>
     <span class="description">Hyunsung Cho, <span class="very_bold">Jacqui Fashimpaur</span>, Naveen Sendhilnathan, Jonathan Browder, David Lindlbauer, Tanya R. Jonker, Kashyap Todi. <span class="italic">Persistent Assistant: Seamless Everyday AI Interactions via Intent Grounding and Multimodal Feedback.</span> CHI 2025.<br>DOI: <a class="text_link" href="https://doi.org/10.1145/3706598.3714317" target="blank">https://doi.org/10.1145/3706598.3714317</a></span><br><br>
@@ -94,14 +98,13 @@
     <span class="very_bold">Honorable Mention Award (top 5%)</span></span><br><br>
     <span class="description"><span class="very_bold">Jacqui Fashimpaur</span>, Kenrick Kin, and Matt Longest. <span class="italic">PinchType: Text Entry for Virtual and Augmented Reality Using Comfortable Thumb to Fingertip Pinches.</span> CHI EA 2020.<br>DOI: <a class="text_link" href="https://doi.org/10.1145/3334480.3382888" target="blank">https://doi.org/10.1145/3334480.3382888</a></span><br><br>
     <br><span class="section_header">Other Experience</span><br><br>
-    <div class="row_with_date"><span class="bullet_point">teammate&nbsp;&nbsp;&nbsp;</span><div class="date">May 2020 - Present</div></div>
+    <div class="row_with_date"><span class="bullet_point">teammate&nbsp;&nbsp;&nbsp;</span><div class="date">January 2018 - Present</div></div>
     <span class="subtitle">Art/Story Lead, Puzzle Writer</span><br>
     <span class="description">
       <ul>
-        <li><a class="text_link" href="https://teammatehunt.com/" target="blank">Teammate Hunt</a>, teammate's recurring puzzle hunt, is a week-long online event</li>
-        <li>The latest Teammate Hunt had over 603 participating teams</li>
-        <li>Contributed puzzles and artwork to Teammate Hunt since 2020</li>
+        <li><a class="text_link" href="https://teammatehunt.com/" target="blank">Teammate Hunt</a>, teammate's recurring puzzle hunt, is a week-long online event with 500+ participating teams</li>
         <li>Managed teams of eight artists and writers to create the 2021 and 2025 hunts' plot and visuals</li>
+        <li>Contributed puzzles and artwork to Teammate Hunt since 2020</li>
         <li>Acted as Creative Lead for the <a class="text_link" href="/projects?project=puzzlefactory">2023 MIT Mystery Hunt</a> (written by teammate)</li>
         <li>See more on my <a class="text_link" href="/puzzles">Puzzle CV</a></li>
       </ul>
@@ -110,7 +113,7 @@
     <span class="subtitle">Volunteer Teaching Assistant</span><br>
     <span class="description">
       <ul>
-        <li><a class="text_link" href="https://www.microsoft.com/en-us/teals" target="blank">TEALS</a> is a Microsoft Philanthropies program in which volunteers help teach high school computer science classes</li>
+        <li><a class="text_link" href="https://www.microsoft.com/en-us/teals" target="blank">TEALS</a> was a Microsoft Philanthropies program in which volunteers helped teach high school computer science classes</li>
         <li>Collaborated with team of five to teach a year-long introductory class with twenty students</li>
         <li>Led several lectures, answered student questions, and graded programming assignments</li>
       </ul>

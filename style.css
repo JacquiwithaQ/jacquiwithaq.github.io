@@ -1,6 +1,6 @@
 :root {
-  --dark-color: #993366;
-  --light-color: #cc6699;
+  --dark-color: #cc506d; /* #993366; */
+  --light-color: #eb8da3; /* #cc6699; */
   --gray-color: #cbcbcb;
 }
 
@@ -115,18 +115,18 @@ a {
 #icons {
   height: 40px;
   width: 130px;
-  padding: 5px 0px 0px 5%;
+  padding: 5px 0px 0px 15px;
   float: left;
 }
 
-.icon {
+.social_icon {
   width: 30px;
   margin: 5px;
   opacity: 1.0;
 }
 
-.icon:hover {
-  opacity: 0.8;
+.social_icon:hover {
+  opacity: 0.9;
 }
 
 #white {
@@ -197,8 +197,24 @@ a {
   font-style: italic;
 }
 
+.vertically-scrollable {
+  overflow-x: auto;
+}
+
 .horizontally-scrollable {
   overflow-x: auto;
+}
+
+#header_content {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer_content {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 550px) {
