@@ -1,6 +1,6 @@
 #content {
-  width: 80%;
-  max-width: 900px;
+  width: 85%;
+  max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 20px 0px 20px 0px;
@@ -11,67 +11,100 @@
   overflow: auto;
 }
 
-.description {
-  font-size: 1rem;
-}
-
 .section_header {
-  font-family: "Young", sans-serif;
-  color: var(--dark-color);
   font-size: 2.3rem;
+  font-family: "Young", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.title {
+  font-size: 1.23rem;
   font-weight: bolder;
+  margin-bottom: 5px;
 }
 
-.date {
-  font-size: 1.13rem;
-  float: right;
-  padding-top: 0.25rem;
+.authors {
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
-.row_with_date {
-  overflow: auto;
-}
-
-.bullet_point {
-  font-size: 1.42rem;
-  font-weight: bolder;
-}
-
-.subtitle {
-  font-size: 1.13rem;
-  font-weight: bolder;
-}
-
-#coursework {
-  display: table;
-}
-
-.coursework_row{
-  display: table-row;
-}
-
-.course {
-  display: table-cell;
-  padding-right: 18px;
+.conference {
   font-size: 0.85rem;
-  font-weight: normal;
-}
-
-.description .italic {
   font-style: italic;
-  font-weight: 300;
+  margin-bottom: 5px;
+  color: var(--dark-color);
 }
 
-.description .bold {
+.award {
+  font-size: 0.85rem;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
-.description .very_bold {
+.award svg {
+  height: 0.85rem;
+  margin-bottom: -2px;
+}
+
+.link_list {
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.publication_link {
+  color: white;
+  background-color: black;
+  padding: 3px 8px 4px 8px;
+  margin: 3px;
+}
+
+.publication_link:hover {
+  background-color: #444444;
+}
+
+.very_bold {
   font-weight: 700;
+}
+
+.publication {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-areas: "thumbnail  info";
+  gap: 30px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 680px) {
   #content {
     width: 90%;
   }
+
+  .publication {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "thumbnail"
+      "info";
+    gap: 15px;
+    margin: 35px 5px 55px 5px;
+  }
+}
+
+.publication_thumbnail {
+  grid-area: thumbnail;
+}
+
+.publication_thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.publication_info {
+  grid-area: info;
 }

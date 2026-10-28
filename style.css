@@ -193,6 +193,10 @@ a {
   font-weight: bolder;
 }
 
+.bolder {
+  font-weight: 700;
+}
+
 .italic {
   font-style: italic;
 }
@@ -203,18 +207,6 @@ a {
 
 .horizontally-scrollable {
   overflow-x: auto;
-}
-
-#header_content {
-  max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#footer_content {
-  max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (max-width: 550px) {

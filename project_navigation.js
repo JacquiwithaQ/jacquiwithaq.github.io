@@ -1,5 +1,5 @@
 project_id_list = ["squiggle", "deepspacedisaster", "wristscrolling", "puzzlefactory", "timescript", "pinchtype", "doodlebugs", "15bricks", "rebuschat", "astraea", "vrhome", "pickmeup", "emop", "infinitedescent", "deepstock", "tracingmovement", "genesong"];
-project_filter_list = ["publications", "arvr", "puzzlesgames"];
+project_filter_list = ["research", "arvr", "puzzlesgames"];
 
 function load_project(){
   urlParams = new URLSearchParams(window.location.search);
