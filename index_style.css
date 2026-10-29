@@ -28,6 +28,10 @@
   overflow: auto;
 }
 
+#publication_list {
+  margin: 0px 20px;
+}
+
 .grid {
   margin-right: auto;
   margin-left: auto;
@@ -46,9 +50,9 @@
   display: block;
 }
 
-#homepage_photo img:hover {
+/*#homepage_photo img:hover {
   content: url("data/red_blue.jpg");
-}
+}*/
 
 #recent_updates {
   grid-area: updates;
