@@ -105,6 +105,12 @@
   display: block;
 }
 
+.publication_thumbnail video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .publication_info {
   grid-area: info;
 }
